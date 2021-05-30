@@ -1,0 +1,152 @@
+
+body {
+    background-color: rgb(220, 226, 220);
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content, .footer { 
+    float: left;
+    width: 78%;
+    background-color: wheat;
+    margin-left: 20%;
+}
+
+header, nav, section {
+    border: 2px solid;
+}
+
+/* section {
+    height: 800px;
+} */
+
+.clearfix {
+    clear: both;
+}
+
+
+/*HEADER
+======================*/
+
+header {
+    height: 100px;
+    background-color: grey;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    
+}
+
+header p {
+    color: white;
+    font-family: 'Cookie', cursive;
+	font-size: 40px;
+    padding-left: 15%;
+    
+}
+
+
+
+/*SECTION
+======================*/
+
+
+section .block {
+	box-sizing: border-box;
+	/* border: 1px solid black; */
+	margin-bottom: 5px;
+	padding: 1rem;
+	text-align: justify;
+	font: 14px/1.7 Arial;
+}
+
+section .block img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	max-width: 354px;
+}
+
+section .image {
+    padding-top: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row; 
+	justify-content: flex-start;
+}
+
+section p {
+    font-family: 'Arvo', serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+
+/*SIDEBAR
+======================*/
+
+
+nav {
+    width: 15%;
+    position: fixed;
+    height: 600px;
+    background-color: grey;
+}
+
+.sidebar li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20%;
+    height: 100px;
+    margin-right: 20%;
+    border-radius: 5px;
+    background-color: violet;
+    box-shadow: 0 0 10px rgba(255, 247, 247, 0.808);
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+
+}
+
+
+/*FOOTER
+======================*/
+
+.box {
+    margin: 5px;
+    height: 300px;
+    display: flex;
+    background-color: tomato;
+}
+
+.box-style{
+    background-color: black;
+    width: 100%;
+    height: 70%;
+    margin: 5% 2% 5%;
+    
+	/* flex-direction: row;
+	justify-content: space-between; */
+}
+
+
+/*table
+======================*/
+
+table {
+    border: 1px solid grey;
+ }
+ /* границы ячеек первого ряда таблицы */
+ th {
+    border: 1px solid grey;
+ }
+ /* границы ячеек тела таблицы */
+ td {
+    border: 1px solid grey;
+ }
