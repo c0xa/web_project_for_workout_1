@@ -114,7 +114,7 @@ nav {
 .sidebar li a {
     text-decoration: none;
     line-height: 100px;
-    transform: translateY(20px);
+    /* transform: translateY(20px); */
     color: white;
     font-family: 'Arvo', serif;
     font-size: 20px;
@@ -125,41 +125,18 @@ nav {
 /*FOOTER
 ======================*/
 
-.box {
-    /* margin: 5px; */
+.box-contact {
     display: flex;
-    border-top: rgba(0, 0, 0, 0.3);;
-    /* background-color: rgb(150, 150, 150); */
+    border-top: rgba(0, 0, 0, 0.3);
 }
 
-.box-style img {
+.box-contact__logo img {
     background-color: rgb(219, 217, 213);
     width: 100%;
     height: auto;
 }
 
-.box-style {
-    width: 100%;
+.box-contact__logo {
     margin: 5% 2% 5%;
 }
 
-/* .img-box-style {
-    height: 100%;
-    background-color: blanchedalmond;
-} */
-
-
-/*table
-======================*/
-
-table {
-    border: 1px solid grey;
- }
-
- th {
-    border: 1px solid grey;
- }
-
- td {
-    border: 1px solid grey;
- }
