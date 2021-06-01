@@ -76,6 +76,20 @@ section p {
     padding-top: 2%;
 }
 
+#information {
+    font-size: 14px;
+}
+
+#history-morena, #ul-ol__name-project li {
+    font-size: 20px;
+}
+
+#history-morena dd, #information {
+    text-indent: 5%;
+    text-align: justify;
+    padding: 5px;
+    margin-right: 5px;
+}
 
 /*SIDEBAR
 ======================*/
@@ -107,17 +121,17 @@ nav {
 /*FOOTER
 ======================*/
 
-.box-contact {
+.flex-element {
     display: flex;
     justify-content: space-around;
 }
 
-.box-contact__logo img {
+.flex-element__contact-logo img {
     width: 100%;
     height: auto;
 }
 
-.box-contact__logo {
+.flex-element__contact-logo {
     width: 15%;
     margin: 5%;
 }

@@ -10,6 +10,10 @@
             <nav class="sidebar"> 
                 <ul>
                     <li><a href="#image">Image</a></li>
+                    <li><a href="#information">Information</a></li>
+                    <li><a href="#blockquote-Moem-Somerset">Quote</a></li>
+                    <li><a href="#ul-ol__name-project">Name projects</a></li>
+                    <li><a href="#history-morena">Morena</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -18,9 +22,17 @@
                     <p>Mayorova_artist</p>
                 </header>
                 <section>
+                    <article id="information"> 
+                        <p>Это <em>дипломные</em> работы:</p>
+                        <pre><h1>Представлены
+                        Russian State University named after A. N. Kosygin <br>
+                        Российским государственным университетом имени А. Н. Косыгина
+                        </h1>
+                    </article>
+                    <hr>
                     <p id="image">Image</p>
                     <br>
-                    <div class="image">
+                    <article class="image">
                         <div class="block">
                             <img src="img/1.jpg" alt="image_1">
                         </div>
@@ -39,30 +51,67 @@
                         <div class="block">
                             <img src="img/6.jpg" alt="image_6">
                         </div>
-                    </div>
+                    </article>
+                    <hr>
+                    <article > 
+                        <blockquote>
+                            <p>Умирать — скучное и безотрадное дело. Мой вам совет — никогда этим не занимайтесь (cказал умирая)</p>
+                            <cite>Уильям Сомерсет Моэм</cite>
+                        </blockquote>
+                    </article>
+                    <hr>
+                    <p>Работы:</p>
+                    <article id="ul-ol__name-project" class="flex-element">
+                        <ol>
+                            <li>Морена
+                            <li>...
+                            <li>На крючке
+                            <li>Новый мир
+                            <li>...
+                            <li>...
+                            <li>...
+                        </ol>
+                        <ul>
+                            <li>Морена
+                            <li>...
+                            <li>На крючке
+                            <li>Новый мир
+                            <li>...
+                            <li>...
+                            <li>...
+                        </ul>
+                    </article>
+                    <hr>
+                    <article id="history-morena">
+                        <dl>
+                            <dt><u>Морена</u></dt>
+                            <dd>Славянская Богиня Зимы и Смерти. С именем Морены созвучны многие страшные слова «мор», «морок», «мрак» и даже «смерть».</dd>
+                            <dd>Упоминания имени Морены встречаем в текстах северных заговоров. Уговоры, обращенные к Богине Смерти, чаще всего читают для доброго дела, например, исцеления от хворей.</dd>
+                        </dl>
+                    </article>
                 </section>
             </div>
             <footer>
-                <div class="content"> 
+                <address class="content"> 
                     <hr>
-                    <div id="contact" class="box-contact box-shadow">
-                        <div class="box-contact__logo">
+                    <div id="contact" class="flex-element box-shadow">
+                        <div class="flex-element__contact-logo">
                             <a href="#">
                                 <img src="img/facebook.png" alt="logo-facebook">
                             </a>
                         </div>
                         
-                        <div class="box-contact__logo">
+                        <div class="flex-element__contact-logo">
                             <a href="#">
                                 <img src="img/instagram.png" alt="logo-instagram">
                             </a>
                         </div>
-                        <div class="box-contact__logo">
+                        <div class="flex-element__contact-logo">
                             <a href="#">
                                 <img src="img/whatsapp.png" alt="logo-facebook">
                             </a>
                         </div>
-                    </div>
+                    </address>
                     <div class="bottom-section">
                         <p>2021</p>
                     </div>
