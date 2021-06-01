@@ -7,8 +7,7 @@ body {
     margin: 0 auto;
 }
 
-.content { 
-    float: left;
+.content {
     width: 78%;
     background-color: rgb(219, 217, 213);
     margin-left: 20%;
@@ -92,8 +91,6 @@ nav {
     background-color: grey;
     text-align: center;
     margin: 0 20% 20% 0;
-    /* margin-bottom: 20%;
-    margin-right: 20%; */
     border-radius: 5%;
 }
 
