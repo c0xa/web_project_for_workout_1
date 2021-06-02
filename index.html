@@ -9,196 +9,25 @@
         <div class="wrapper">
             <nav class="sidebar"> 
                 <ul>
-                    <li><a href="#image">Image</a></li>
-                    <li><a href="#blockquote-Moem-Somerset">Quote</a></li>
-                    <li><a href="#ul-ol__name-project">Name projects</a></li>
-                    <li><a href="#history-morena">Morena</a></li>
-                    <li><a href="#checkbox">Checkbox</a></li>
-                    <li><a href="#block-element">Block element</a></li>
-                    <li><a href="#position">Position</a></li>
-                    <li><a href="#box-sizing">Box-sizing</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="view_element"><a href="html-page/checkbox.html">Checkbox</a></li>
+                    <li class="view_element"><a href="html-page/box-task.html">Box-task</a></li>
+                    <li><a href="html-page/block-element.html">Block element</a></li>
+                    <li><a href="html-page/position.html">Position</a></li>
+                    <li><a href="html-page/box-sizing.html">Box-sizing</a></li>
                 </ul>
             </nav>
             <div class="content box-shadow">
                 <header class="box-shadow">
-                    <p>Mayorova_artist</p>
+                    <p>Example</p>
                 </header>
                 <section>
-                    <p id="image">Image</p>
-                    <br>
-                    <article class="image">
-                        <div class="block">
-                            <img src="img/1.jpg" alt="image_1">
-                        </div>
-                        <div class="block">
-                            <img src="img/2.jpg" alt="image_2">
-                        </div>
-                        <div class="block">
-                            <img src="img/3.jpg" alt="image_3">
-                        </div>
-                        <div class="block">
-                            <img src="img/4.jpg" alt="image_4">
-                        </div>
-                        <div class="block">
-                            <img src="img/5.jpg" alt="image_5">
-                        </div>
-                        <div class="block">
-                            <img src="img/6.jpg" alt="image_6">
-                        </div>
-                    </article>
-                    <hr>
-                    <article > 
-                        <blockquote id="blockquote-Moem-Somerset">
-                            <p>Умирать — скучное и безотрадное дело. Мой вам совет — никогда этим не занимайтесь (cказал умирая)</p>
-                            <cite>Уильям Сомерсет Моэм</cite>
-                        </blockquote>
-                    </article>
-                    <hr>
-                    <p>Работы:</p>
-                    <article id="ul-ol__name-project" class="flex-element">
-                        <ol>
-                            <li>Морена
-                            <li>...
-                            <li>На крючке
-                            <li>Новый мир
-                            <li>...
-                            <li>...
-                            <li>...
-                        </ol>
-                        <ul>
-                            <li>Морена
-                            <li>...
-                            <li>На крючке
-                            <li>Новый мир
-                            <li>...
-                            <li>...
-                            <li>...
-                        </ul>
-                    </article>
-                    <hr>
-                    <article id="history-morena">
-                        <dl>
-                            <dt><u>Морена</u></dt>
-                            <dd>Славянская Богиня Зимы и Смерти. С именем Морены созвучны многие страшные слова «мор», «морок», «мрак» и даже «смерть».</dd>
-                            <dd>Упоминания имени Морены встречаем в текстах северных заговоров. Уговоры, обращенные к Богине Смерти, чаще всего читают для доброго дела, например, исцеления от хворей.</dd>
-                        </dl>
-                    </article>
-                    <hr>
-                    <p>Check box</p>
-                    <article id="checkbox" class="flex-element">               
-                        <label class="container">unchecked
-                            <input type="checkbox">
-                        </label>
-                        <label class="container">checked
-                            <input type="checkbox" checked="checked">
-                        </label>
-                        <label class="container">disabled
-                            <input type="checkbox" disabled="disabled">
-                        </label>
-                        <label class="container">disabled checked
-                            <input type="checkbox" disabled="disabled" checked="checked">
-                        </label>
-                    </article>
-                    <hr>
-                    <p>block-element</p>
-                    <article id="block-element">
-                        Div element: flex;
-                        <div class="flex-element__div">
-                            <div class="block-element__first">
-                                first
-                            </div>
-                            <div class="block-element__second">
-                                second
-                            </div>
-                            <div class="block-element__third">
-                                third
-                            </div>
-                        </div>
-                        Div element: inline-block; нет схлопыванию;
-                        <div class="example_without_collapse">
-                            <div class="block-element__first">
-                                first
-                            </div>
-                            <div class="block-element__second">
-                                second
-                            </div>
-                            <div class="block-element__third">
-                                third
-                            </div>
-                        </div>
-                        Div element: схлопывание;
-                        <div>
-                            <div class="block-element__first">
-                                first
-                            </div>
-                            <div class="block-element__second">
-                                second
-                            </div>
-                            <div class="block-element__third">
-                                third
-                            </div>
-                        </div>
-                        Div element: Выпадение вертикальных отступов;
-                        <div class="parent">
-                            <div class="child">
-                            </div>
-                        </div>
-                        Div element: без выпадения вертикальных отступов;
-                        <div class="parent">
-                            <div class="child__without-collapse">
-                            </div>
-                        </div> 
-                    </article>
-                    <hr>
-                    <p>Position</p>
-                    <article id="position">
-                        <p>I am sidebar and i have position fixed</p>
-                        <div class="sticky">I am sticky</div>
-                        <div class="absolute">I am absolute</div>
-                        <div class="static">I am static</div>
-                        <div class="relative">I am relative</div>
-                        <div class="usually">I am usually</div>
-                    </article>
-                    <hr>
-                    <p>Box sizing</p>
-                    <article id="box-sizing" class="flex-element">
-                        <div>
-                            <div class="box-sizing__elem1">elem1</div>
-                            <div class="box-sizing__elem2 without-colllapse">elem2</div>
-                        </div>
-                        <div>
-                            <div class="box-sizing__elem1">elem1</div>
-                            <div class="box-sizing__elem2">elem2</div>
-                        </div>
-                    </article>
-
+                    <p>Add: Box-task</p>
+                    <p>Edit: Checkbox</p>
                 </section>
             </div>
             <footer>
-                <address class="content"> 
-                    <hr>
-                    <div id="contact" class="flex-element box-shadow">
-                        <div class="flex-element__contact-logo">
-                            <a href="#">
-                                <img src="img/facebook.png" alt="logo-facebook">
-                            </a>
-                        </div>
-                        
-                        <div class="flex-element__contact-logo">
-                            <a href="#">
-                                <img src="img/instagram.png" alt="logo-instagram">
-                            </a>
-                        </div>
-                        <div class="flex-element__contact-logo">
-                            <a href="#">
-                                <img src="img/whatsapp.png" alt="logo-facebook">
-                            </a>
-                        </div>
-                    </address>
-                    <div class="bottom-section">
-                        <p>2021</p>
-                    </div>
+                <div class="bottom-section">
+                    <p>2021</p>
                 </div>
             </footer>
         </div>
