@@ -10,10 +10,10 @@
             <nav class="sidebar"> 
                 <ul>
                     <li><a href="#image">Image</a></li>
-                    <li><a href="#information">Information</a></li>
                     <li><a href="#blockquote-Moem-Somerset">Quote</a></li>
                     <li><a href="#ul-ol__name-project">Name projects</a></li>
                     <li><a href="#history-morena">Morena</a></li>
+                    <li><a href="#checkbox">Checkbox</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -22,14 +22,6 @@
                     <p>Mayorova_artist</p>
                 </header>
                 <section>
-                    <article id="information"> 
-                        <p>Это <em>дипломные</em> работы:</p>
-                        <pre><h1>Представлены
-                        Russian State University named after A. N. Kosygin <br>
-                        Российским государственным университетом имени А. Н. Косыгина
-                        </h1>
-                    </article>
-                    <hr>
                     <p id="image">Image</p>
                     <br>
                     <article class="image">
@@ -54,7 +46,7 @@
                     </article>
                     <hr>
                     <article > 
-                        <blockquote>
+                        <blockquote id="blockquote-Moem-Somerset">
                             <p>Умирать — скучное и безотрадное дело. Мой вам совет — никогда этим не занимайтесь (cказал умирая)</p>
                             <cite>Уильям Сомерсет Моэм</cite>
                         </blockquote>
@@ -89,6 +81,33 @@
                             <dd>Упоминания имени Морены встречаем в текстах северных заговоров. Уговоры, обращенные к Богине Смерти, чаще всего читают для доброго дела, например, исцеления от хворей.</dd>
                         </dl>
                     </article>
+                    <hr>
+                    <article id="checkbox" class="flex-element">               
+                        <label class="main">focused
+                            <input type="checkbox">
+                            <span class="geekmark"></span>
+                        </label>
+                          
+                        <label class="main">checked
+                            <input type="checkbox" checked="checked">
+                            <span class="geekmark"></span>
+                        </label>
+                          
+                        <label class="main">unchecked
+                            <input type="checkbox">
+                            <span class="geekmark"></span>
+                        </label>
+                        <label class="main">disabled
+                            <input type="checkbox" checked="checked">
+                            <span class="geekmark"></span>
+                        </label>
+                          
+                        <label class="main">disabled checked
+                            <input type="checkbox">
+                            <span class="geekmark"></span>
+                        </label>
+
+                    </article>
                 </section>
             </div>
             <footer>
@@ -117,7 +136,6 @@
                     </div>
                 </div>
             </footer>
-        
         </div>
     </body>
 </html>

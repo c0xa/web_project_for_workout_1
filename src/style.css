@@ -37,7 +37,7 @@ header {
 header p {
     color: white;
     font-family: 'Cookie', cursive;
-	font-size: 40px;
+    font-size: 40px;
     padding-left: 15%;
     
 }
@@ -94,10 +94,14 @@ section p {
 /*SIDEBAR
 ======================*/
 
-
-nav {
-    width: 15%;
+.sidebar {
     position: fixed;
+    height: 100%;
+    width: 15%;
+}
+
+.sidebar ul {
+    height: 100%;
 }
 
 .sidebar li {
@@ -106,14 +110,15 @@ nav {
     text-align: center;
     margin: 0 20% 20% 0;
     border-radius: 5%;
+    min-height: 10%;
 }
 
 .sidebar li a {
     text-decoration: none;
-    line-height: 100px;
+    /* line-height: 100px; */
     color: white;
     font-family: 'Arvo', serif;
-    font-size: 20px;
+    font-size: 15px;
 
 }
 
@@ -148,4 +153,67 @@ nav {
     color: rgba(49, 46, 46, 0.63);
     text-align: center;
     padding-top: 5%;
+}
+
+/*checkbox
+======================*/
+
+#checkbox {
+    height: 50px;
+    padding-top: 3%;
+}
+.geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+}
+  
+/* Specify the background color to be
+shown when hovering over checkbox */
+.main:hover input ~ .geekmark {
+    background-color: yellow;
+}
+  
+/* Specify the background color to be
+shown when checkbox is active */
+.main input:active ~ .geekmark {
+    background-color: red;
+}
+  
+/* Specify the background color to be
+shown when checkbox is checked */
+.main input:checked ~ .geekmark {
+    background-color: green;
+}
+  
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Display checkmark when checked */
+.main input:checked ~ .geekmark:after {
+    display: block;
+}
+  
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.main .geekmark:after {
+    left: 8px;
+    bottom: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
