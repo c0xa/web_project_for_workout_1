@@ -9,8 +9,6 @@
 
 .checkbox__checked-begin, .checkbox__focused-begin, .checkbox__disabled-begin, .checkbox__all-states-begin {
     position: absolute;
-    width: 1px;
-    height: 1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
 }

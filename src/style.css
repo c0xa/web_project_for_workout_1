@@ -42,8 +42,6 @@ header p {
     
 }
 
-
-
 /*SECTION
 ======================*/
 
@@ -74,21 +72,6 @@ section p {
     font-size: 30px;
     text-align: center;
     padding-top: 2%;
-}
-
-#information {
-    font-size: 14px;
-}
-
-#history-morena, #ul-ol__name-project li {
-    font-size: 20px;
-}
-
-#history-morena dd, #information {
-    text-indent: 5%;
-    text-align: justify;
-    padding: 5px;
-    margin-right: 5px;
 }
 
 /*SIDEBAR
