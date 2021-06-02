@@ -14,6 +14,9 @@
                     <li><a href="#ul-ol__name-project">Name projects</a></li>
                     <li><a href="#history-morena">Morena</a></li>
                     <li><a href="#checkbox">Checkbox</a></li>
+                    <li><a href="#block-element">Block element</a></li>
+                    <li><a href="#position">Position</a></li>
+                    <li><a href="#box-sizing">Box-sizing</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -82,32 +85,94 @@
                         </dl>
                     </article>
                     <hr>
+                    <p>Check box</p>
                     <article id="checkbox" class="flex-element">               
-                        <label class="main">focused
+                        <label class="container">unchecked
                             <input type="checkbox">
-                            <span class="geekmark"></span>
                         </label>
-                          
-                        <label class="main">checked
+                        <label class="container">checked
                             <input type="checkbox" checked="checked">
-                            <span class="geekmark"></span>
                         </label>
-                          
-                        <label class="main">unchecked
-                            <input type="checkbox">
-                            <span class="geekmark"></span>
+                        <label class="container">disabled
+                            <input type="checkbox" disabled="disabled">
                         </label>
-                        <label class="main">disabled
-                            <input type="checkbox" checked="checked">
-                            <span class="geekmark"></span>
+                        <label class="container">disabled checked
+                            <input type="checkbox" disabled="disabled" checked="checked">
                         </label>
-                          
-                        <label class="main">disabled checked
-                            <input type="checkbox">
-                            <span class="geekmark"></span>
-                        </label>
-
                     </article>
+                    <hr>
+                    <p>block-element</p>
+                    <article id="block-element">
+                        Div element: flex;
+                        <div class="flex-element__div">
+                            <div class="block-element__first">
+                                first
+                            </div>
+                            <div class="block-element__second">
+                                second
+                            </div>
+                            <div class="block-element__third">
+                                third
+                            </div>
+                        </div>
+                        Div element: inline-block; нет схлопыванию;
+                        <div class="example_without_collapse">
+                            <div class="block-element__first">
+                                first
+                            </div>
+                            <div class="block-element__second">
+                                second
+                            </div>
+                            <div class="block-element__third">
+                                third
+                            </div>
+                        </div>
+                        Div element: схлопывание;
+                        <div>
+                            <div class="block-element__first">
+                                first
+                            </div>
+                            <div class="block-element__second">
+                                second
+                            </div>
+                            <div class="block-element__third">
+                                third
+                            </div>
+                        </div>
+                        Div element: Выпадение вертикальных отступов;
+                        <div class="parent">
+                            <div class="child">
+                            </div>
+                        </div>
+                        Div element: без выпадения вертикальных отступов;
+                        <div class="parent">
+                            <div class="child__without-collapse">
+                            </div>
+                        </div> 
+                    </article>
+                    <hr>
+                    <p>Position</p>
+                    <article id="position">
+                        <p>I am sidebar and i have position fixed</p>
+                        <div class="sticky">I am sticky</div>
+                        <div class="absolute">I am absolute</div>
+                        <div class="static">I am static</div>
+                        <div class="relative">I am relative</div>
+                        <div class="usually">I am usually</div>
+                    </article>
+                    <hr>
+                    <p>Box sizing</p>
+                    <article id="box-sizing" class="flex-element">
+                        <div>
+                            <div class="box-sizing__elem1">elem1</div>
+                            <div class="box-sizing__elem2 without-colllapse">elem2</div>
+                        </div>
+                        <div>
+                            <div class="box-sizing__elem1">elem1</div>
+                            <div class="box-sizing__elem2">elem2</div>
+                        </div>
+                    </article>
+
                 </section>
             </div>
             <footer>
