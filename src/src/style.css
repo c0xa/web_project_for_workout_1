@@ -45,27 +45,6 @@ header p {
 /*SECTION
 ======================*/
 
-
-section .block {
-	padding: 1rem;
-	text-align: justify;
-	font: 14px/1.7 Arial;
-}
-
-section .block img {
-	width: 80%;
-	display: block;
-	margin: 0 auto;
-	max-width: 354px;
-}
-
-section .image {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row; 
-	justify-content: flex-start;
-}
-
 section p {
     font-family: 'Arvo', serif;
     color: rgb(58, 12, 12);
@@ -83,9 +62,6 @@ section p {
     width: 15%;
 }
 
-.sidebar ul {
-    height: 100%;
-}
 
 .sidebar li {
     list-style: none;
@@ -104,29 +80,16 @@ section p {
     font-size: 15px;
 }
 
-.view_element {
+.view-element {
     box-shadow: inset 0 -3em 3em rgba(240, 174, 174, 0.808),
                 0 0  0 2px rgba(219, 117, 117, 0.808),
                 0.3em 0.3em 1em rgba(179, 104, 104, 0.3);
 }
 
-
-/*FOOTER
-======================*/
-
 .flex-element {
     display: flex;
+    margin: 0px;
     justify-content: space-around;
-}
-
-.flex-element__contact-logo img {
-    width: 100%;
-    height: auto;
-}
-
-.flex-element__contact-logo {
-    width: 15%;
-    margin: 5%;
 }
 
 /*bottom section 
