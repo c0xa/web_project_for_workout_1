@@ -111,4 +111,18 @@ a:link {
 
 .example_marker li::marker { 
     color: red;
-  }
+ }
+
+p:lang(fr) {
+    color: rgb(112, 81, 24);
+}
+
+code {
+    color: black;
+}
+
+
+  body :not(code) {
+    color: rgb(82, 1, 64);
+    font-style: italic; 
+}
