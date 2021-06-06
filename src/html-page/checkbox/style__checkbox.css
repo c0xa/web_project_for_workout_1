@@ -1,0 +1,52 @@
+/*checkbox
+======================*/
+
+.section__for-checkbox {
+    display: flex;
+    margin: 5% 20%;
+    justify-content: space-between;
+}
+
+.checkbox-car—background-initial {
+    position: absolute;
+    background-color: wheat;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.checkbox-car—color-red {
+    background-image: url("../../img/Car16Red.svg");
+}
+
+.checkbox-car—color-yellow {
+    background-image: url("../../img/Car16Yellow.svg");
+}
+
+.checkbox-car—color-blue {
+    background-image: url("../../img/Car16Blue.svg");
+}
+
+.checkbox-car—color-green {
+    background-image: url("../../img/Car16Green.svg");
+}
+
+
+.checkbox-car—background-change {
+    display: inline-block;
+    background-size: 100%;
+    background-attachment: local;
+    vertical-align: middle;
+    width: 90px;
+    height: 30px;
+}
+
+.checkbox-car—background-initial:checked + .checkbox-car—background-change {
+    background-color: #6b0202;
+    box-shadow:  0 0 20px rgb(43, 1, 1);
+}
+
+.checkbox-car—background-initial:focus + .checkbox-car—background-change {
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow:  0 0 20px pink;
+    box-sizing: border-box;
+}
