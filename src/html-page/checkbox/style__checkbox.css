@@ -62,30 +62,28 @@
     box-shadow: 2px 2px 5px rgba(240, 233, 227, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 }
 
-.checkbox__img-car--color-red::after {
+.checkbox__img-car--color-red::after,
+.checkbox__img-car--color-blue::after,
+.checkbox__img-car--color-green::after,
+.checkbox__img-car--color-yellow::after 
+{
     position: relative;
     top: 40px;
     left: 10px;
+}
+
+.checkbox__img-car--color-red::after {
     content: "Red car";
 }
 
 .checkbox__img-car--color-blue::after {
-    position: relative;
-    top: 40px;
-    left: 10px;
     content: "Blue car";
 }
 
 .checkbox__img-car--color-green::after {
-    position: relative;
-    top: 40px;
-    left: 10px;
     content: "Green car";
 }
 
 .checkbox__img-car--color-yellow::after {
-    position: relative;
-    top: 40px;
-    left: 10px;
     content: "Yellow car";
 }
