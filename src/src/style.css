@@ -35,6 +35,7 @@ header {
 
 header p {
     color: white;
+    overflow: auto;
     font-family: 'trebuchet ms';
     white-space: pre-wrap;
     font-size: 40px;
