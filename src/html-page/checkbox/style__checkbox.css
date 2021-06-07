@@ -1,37 +1,40 @@
 /*checkbox
 ======================*/
 
-.section__for-checkbox {
+.section__checkbox {
     display: flex;
     margin: 5% 20%;
     justify-content: space-between;
 }
 
-.checkbox-car—background-initial {
+.checkbox--background-initial {
     position: absolute;
+    top: 0;
+    left: 0;
     background-color: wheat;
     overflow: hidden;
     clip: rect(0 0 0 0);
+    
 }
 
-.checkbox-car—color-red {
+.checkbox__img-car--color-red {
     background-image: url("../../img/Car16Red.svg");
 }
 
-.checkbox-car—color-yellow {
+.checkbox__img-car--color-yellow {
     background-image: url("../../img/Car16Yellow.svg");
 }
 
-.checkbox-car—color-blue {
+.checkbox__img-car--color-blue {
     background-image: url("../../img/Car16Blue.svg");
 }
 
-.checkbox-car—color-green {
+.checkbox__img-car--color-green {
     background-image: url("../../img/Car16Green.svg");
 }
 
 
-.checkbox-car—background-change {
+.checkbox--background-change {
     display: inline-block;
     background-size: 100%;
     background-attachment: local;
@@ -40,13 +43,21 @@
     height: 30px;
 }
 
-.checkbox-car—background-initial:checked + .checkbox-car—background-change {
+.checkbox--background-initial:checked + .checkbox--background-change {
     background-color: #6b0202;
     box-shadow:  0 0 20px rgb(43, 1, 1);
 }
 
-.checkbox-car—background-initial:focus + .checkbox-car—background-change {
-    border: 2px solid rgb(0, 0, 0);
+.checkbox--background-initial:focus + .checkbox--background-change {
+    border: 2px dotted rgb(104, 9, 9);
     box-shadow:  0 0 20px pink;
     box-sizing: border-box;
+}
+
+.checkbox--background-initial:disabled + .checkbox--background-change {
+    opacity: 0.5;
+}
+
+.checkbox--background-initial:enabled + .checkbox--background-change {
+    box-shadow: 2px 2px 5px rgba(240, 233, 227, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 }

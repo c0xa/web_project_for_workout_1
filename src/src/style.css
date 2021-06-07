@@ -33,10 +33,10 @@ header {
     
 }
 
-header {
+header p {
     color: white;
     font-family: 'trebuchet ms';
-    font-size: 170.25%;
+    font-size: 40px;
     padding-left: 15%;
     
 }
