@@ -13,8 +13,7 @@
     left: 0;
     background-color: wheat;
     overflow: hidden;
-    clip: rect(0 0 0 0);
-    
+    clip: rect(0 0 0 0);   
 }
 
 .checkbox__img-car--color-red {
@@ -44,13 +43,16 @@
 }
 
 .checkbox--background-initial:checked + .checkbox--background-change {
-    background-color: #6b0202;
-    box-shadow:  0 0 20px rgb(43, 1, 1);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
 }
 
 .checkbox--background-initial:focus + .checkbox--background-change {
-    border: 2px dotted rgb(104, 9, 9);
     box-shadow:  0 0 20px pink;
+    border: 1px solid pink;
     box-sizing: border-box;
 }
 
