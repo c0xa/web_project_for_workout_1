@@ -17,64 +17,66 @@
                     </a>
                     <span class="header__datetime">6 июня, воскресенье 22:52</span>
                 </div>
-                <div class="header__card">
+                <!-- <div class="header__card">
                     <div class="header__icon">
                         <a class="header__icon-link" href=" ">
-                            <svg class="header__icon-market _market ">
-                                <use xlink:href="sprite.svg#truck"></use>
-                            </svg>
                         </a>
                         <a class="header__icon-link" href=" ">
-                            <svg class="header__icon-alert _alert">
-                                <use xlink:href="sprite.svg#truck"></use>
-                            </svg>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </header>
             <main class="content">
                 <section class="container">
                     <div class="container__left news">
                         <div class="news__header">
                             <a href="" class="header__news-link link">
-                                <span class="link__title">Сейчас в СМИ</span>
+                                <span class="link__title _main">Сейчас в СМИ</span>
                             </a>
-                            <div class="header__item"> 
-                                <a href="" class="header__item-link link">
-                                    <span class="link__title">В Москве</span>
-                                </a>
-                                <a href="" class="header__item-link link">
-                                    <span class="link__title">Интересное</span>
-                                </a>
-                            </div>
+                            <a href="" class="header__news-link link">
+                                <span class="link__title">в Москве</span>
+                            </a>
+                            <a href="" class="header__news-link link">
+                                <span class="link__title">Интересное</span>
+                            </a>
                         </div>
                         <div class="news__panel">
                             <ul class="panel">
                                 <li class="panel__item"> 
                                     <a href="" class="panel__item-link link">
+                                        <object class="link__image" title="Российская газета" data="https://avatars.mds.yandex.net/get-ynews-logo/26056/1116-1478692904205-square/logo-square" type="image/png">
+                                        </object>
                                         <span class="link__title">В Госдуме призвали не пользоваться просочившейся в Крым водой из Украины</span>
                                     </a>
                                 </li>
                                 <li class="panel__item"> 
                                     <a href="" class="panel__item-link link">
+
+                                        <object class="link__image" title="РБК" data="https://avatars.mds.yandex.net/get-ynews-logo/117671/1027-1530099491421-square/logo-square" type="image/png">
+                                        </object>
                                         <span class="link__title">Axios: Байден отказался встречаться с Зеленским до саммита с Путиным</span>
                                     </a>
                                 </li>
 
                                 <li class="panel__item"> 
                                     <a href="" class="panel__item-link link">
+                                        <object class="link__image" title="RT на русском" data="https://avatars.mds.yandex.net/get-ynews-logo/28627/254083361-1516267195536-square/logo-square" type="image/png">
+                                        </object>
                                         <span class="link__title">Россию обвинили в дискредитации НАТО из-за снятия пьяных солдат с поезда</span>
                                     </a>
                                 </li>
 
                                 <li class="panel__item"> 
                                     <a href="" class="panel__item-link link">
+                                        <object class="link__image" title="Ведомости" data="https://avatars.mds.yandex.net/get-ynews-logo/117671/1689-1573819514737-square/logo-square" type="image/png"></object>
                                         <span class="link__title">СБУ отрицает задержание своего агента в России</span>
                                     </a>
                                 </li>
 
                                 <li class="panel__item"> 
                                     <a href="" class="panel__item-link link">
+                                        <object class="link__image" title="РИА Новости" data="https://avatars.mds.yandex.net/get-ynews-logo/135513/1002-1544074003449-square/logo-square" type="image/png">
+                                        </object>
                                         <span class="link__title">В МИД заявили, что режим санкций Запада против России останется навсегда</span>
                                     </a>
                                 </li>
@@ -86,12 +88,12 @@
                             <a href="" class="header__whether-link link">
                                 <span class="link__title-main">Погода</span>
                             </a>
-                            <a href="" class="header__item-link link">
-                                <span class="link__title">Погода</span>
+                            <a href="" class="header__whether-link link">
+                                <span class="link__title">Карта осадков</span>
                             </a>
-                            <svg class="header__dots">
+                            <!-- <svg class="header__dots">
                                 <use xlink:href="sprite.svg#dots-vert"></use>
-                            </svg>
+                            </svg> -->
                         </div>
 
                         <div class="whether__content">
@@ -100,26 +102,26 @@
                                 <span class="whether__temp">+21</span>
                             </a>
                             <a class="whether__link _ahead" href="">
-                                <span class="whether__date">Ночью</span>
+                                <span class="whether__date">Утром</span>
                                 <div class="whether__card">
-                                    <span class="whether__ahead _night"></span>
+                                    <span class="whether__ahead _morning"></span>
                                     <span class="whether_temp">+16</span>
                                 </div>
                             </a>
 
                             <a class="whether__link _ahead" href="">
-                                <span class="whether__date">Утром</span>
+                                <span class="whether__date">Днем</span>
                                 <div class="whether__card">
-                                    <span class="whether__ahead _morning"></span>
+                                    <span class="whether__ahead _afternoon"></span>
                                     <span class="whether_temp">+17</span>
                                 </div>
                             </a>
 
 
                             <a class="whether__link _ahead" href="">
-                                <span class="whether__date">Днем</span>
+                                <span class="whether__date">Ночью</span>
                                 <div class="whether__card">
-                                    <span class="whether__ahead _afternoon"></span>
+                                    <span class="whether__ahead _night"></span>
                                     <span class="whether_temp">+19</span>
                                 </div>
                             </a>
@@ -134,6 +136,9 @@
                                 </a>
                                 <a class="traffic__link" href="">
                                     <span class="traffic__title">Расписание</span>
+                                </a>
+                                <a class="traffic__link" href="">
+                                    <span class="traffic__title">Такси</span>
                                 </a>
                             </div>
                         </div>
