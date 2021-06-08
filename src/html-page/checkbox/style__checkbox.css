@@ -1,13 +1,11 @@
-/*checkbox
-======================*/
 
 .section__checkbox {
     display: flex;
-    margin: 5% 20%;
-    justify-content: space-between;
+    margin: 50px 0;
+    justify-content: space-around;
 }
 
-.checkbox--background-initial {
+._hidden {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,76 +14,31 @@
     clip: rect(0 0 0 0);   
 }
 
-.checkbox__img-car--color-red {
-    background-image: url("../../img/Car16Red.svg");
-}
-
-.checkbox__img-car--color-yellow {
-    background-image: url("../../img/Car16Yellow.svg");
-}
-
-.checkbox__img-car--color-blue {
-    background-image: url("../../img/Car16Blue.svg");
-}
-
-.checkbox__img-car--color-green {
-    background-image: url("../../img/Car16Green.svg");
-}
-
-
-.checkbox--background-change {
+.image__car {
     display: inline-block;
     background-size: 100%;
     background-attachment: local;
     vertical-align: middle;
     width: 90px;
     height: 30px;
-}
-
-.checkbox--background-initial:checked + .checkbox--background-change {
-    -o-transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-}
-
-.checkbox--background-initial:focus + .checkbox--background-change {
-    box-shadow:  0 0 20px pink;
-    border: 1px solid pink;
+    border: 1px solid black;
     box-sizing: border-box;
 }
 
-.checkbox--background-initial:disabled + .checkbox--background-change {
+.image__text {
+    line-break: auto;
+    overflow-wrap: normal;
+}
+
+.image:checked + .image__car {
+    background-image: url("../../img/Car16Red.svg");
+    box-sizing: border-box;
+}
+
+.image:disabled + .image__car {
     opacity: 0.5;
 }
 
-.checkbox--background-initial:enabled + .checkbox--background-change {
-    box-shadow: 2px 2px 5px rgba(240, 233, 227, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
-}
-
-.checkbox__img-car--color-red::after,
-.checkbox__img-car--color-blue::after,
-.checkbox__img-car--color-green::after,
-.checkbox__img-car--color-yellow::after 
-{
-    position: relative;
-    top: 40px;
-    left: 10px;
-}
-
-.checkbox__img-car--color-red::after {
-    content: "Red car";
-}
-
-.checkbox__img-car--color-blue::after {
-    content: "Blue car";
-}
-
-.checkbox__img-car--color-green::after {
-    content: "Green car";
-}
-
-.checkbox__img-car--color-yellow::after {
-    content: "Yellow car";
+.image:enabled + .image__car {
+    opacity: 1.5;
 }

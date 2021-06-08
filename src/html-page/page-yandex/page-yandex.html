@@ -7,111 +7,180 @@
 </head>
     <body>
         <div class="wrapper">
-            <header>
-                <a class="header__location  text_grey" href="#">Москва</a> 
-                <span class="header__datetime text_grey">6 июня, воскресенье 22:52</span>
+            <header class="header">
+                <a class="header__location-link link" href="#">
+                    <svg class="link__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"></path>
+                    </svg>
+                    <span class="link__country">Москва</span>
+                </a>
+                <span class="header__datetime">6 июня, воскресенье 22:52</span>
             </header>
-            <div class="container__first flex-element"> 
-                <div class="container__first-news">
-                    <div class="news__header">
-                        <span class="news__head-item"><a href="#">Сейчас в СМИ</a></span> 
-                        <span class="news__head-item"><a href="#">В Москве</a></span> 
-                        <span class="news__head-item"><a href="#">Интересное</a></span> 
+            <main class="content">
+                <div class="container">
+                    <div class="container__left news">
+                        <div class="news__header">
+                            <a href="" class="header__news-link link">
+                                <span class="link__title">Сейчас в СМИ</span>
+                            </a>
+                            <div class="header__item"> 
+                                <a href="" class="header__item-link link">
+                                    <span class="link__title">В Москве</span>
+                                </a>
+                                <a href="" class="header__item-link link">
+                                    <span class="link__title">Интересное</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news__panel">
+                            <ul class="panel">
+                                <li class="panel__item"> 
+                                    <a href="" class="panel__item-link link">
+                                        <span class="link__title">В Госдуме призвали не пользоваться просочившейся в Крым водой из Украины</span>
+                                    </a>
+                                </li>
+                                <li class="panel__item"> 
+                                    <a href="" class="panel__item-link link">
+                                        <span class="link__title">Axios: Байден отказался встречаться с Зеленским до саммита с Путиным</span>
+                                    </a>
+                                </li>
+
+                                <li class="panel__item"> 
+                                    <a href="" class="panel__item-link link">
+                                        <span class="link__title">Россию обвинили в дискредитации НАТО из-за снятия пьяных солдат с поезда</span>
+                                    </a>
+                                </li>
+
+                                <li class="panel__item"> 
+                                    <a href="" class="panel__item-link link">
+                                        <span class="link__title">СБУ отрицает задержание своего агента в России</span>
+                                    </a>
+                                </li>
+
+                                <li class="panel__item"> 
+                                    <a href="" class="panel__item-link link">
+                                        <span class="link__title">В МИД заявили, что режим санкций Запада против России останется навсегда</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="news__panel">
-                        <ul>
-                            <li>В Госдуме призвали не пользоваться просочившейся в Крым водой из Украины</li>
-                            <li>Axios: Байден отказался встречаться с Зеленским до саммита с Путиным</li>
-                            <li>Россию обвинили в дискредитации НАТО из-за снятия пьяных солдат с поезда</li>
-                            <li>СБУ отрицает задержание своего агента в России</li>
-                            <li>В МИД заявили, что режим санкций Запада против России останется навсегда</li>
-                        </ul>
+                    <div class="container__right whether">
+                        <div class="whether__header">
+                            <a href="" class="header__whether-link link">
+                                <span class="link__title-main">Погода</span>
+                            </a>
+                            <a href="" class="header__item-link link">
+                                <span class="link__title">Погода</span>
+                            </a>
+                            <svg class="header__dots">
+                                <use xlink:href="sprite.svg#dots-vert"></use>
+                            </svg>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                        <div class="whether__content">
+                            <a class="content__icon-main" href="">
+                                <span>+21</span>
+                            </a>
+
+                            <div class="content__icon-main"><a href="">+21</a></div>
+                            <div class="">
+                                <div>
+                                    <a href="">
+                                        Вечером
+                                        <div class="whether__icon-1"></div> </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        Ночью
+                                        <div class="whether__icon-2"></div> </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        Утром
+                                        <div class="whether__icon-3"></div> </div>
+                                    </a>
+                                </div>
+                                <div class="traffic__header">
+                                    <li><a href="">Пробки</a></li>
+                                    <ul>
+                                        <li><a href="">Метро</a></li>
+                                        <li><a href="">Расписание</a></li>
+                                        <li><a href="">Такси</a></li>
+                                    </ul>
+                                </div>
+                            </div>  
+                        </div>
                     </div>
-                    <div class="news__stocks"></div>
                 </div>
-                <div class="container__first-whether">
-                    <div class="whether-header">
-                        <span><a href="#">Погода</a></span>
-                        <span><a href="#">Карта осадков</a></span>
-                    </div>
-                    <div class="whether-content">
-                        <div class="whether__icon-main"><a href="">+21</a></div>
-                        <div class="">
-                            <div>
-                                <a href="">
-                                    Вечером
-                                    <div class="whether__icon-1"></div> </div>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Ночью
-                                    <div class="whether__icon-2"></div> </div>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Утром
-                                    <div class="whether__icon-3"></div> </div>
-                                </a>
-                            </div>
-                            <div class="traffic__header">
-                                <li><a href="">Пробки</a></li>
-                                <ul>
-                                    <li><a href="">Метро</a></li>
-                                    <li><a href="">Расписание</a></li>
-                                    <li><a href="">Такси</a></li>
-                                </ul>
-                            </div>
-                        </div>  
-                    </div>
+                <div class="container__app">
+                    <ul class="flex-element">
+                        <li>
+                            <div class="app-logo__img-arenda"></div>
+                            <div class="text-app">Aренда</div>
+                        </li>
+                        <li>
+                            <div class="app-logo__img-market"></div> </div>
+                            <div class="text-app">Маркет</div>
+                        </li>
+                        <li>
+                            <div class="app-logo__img-video"></div> </div>
+                            <div class="text-app">Видео</div>
+                        </li>
+                        <li>
+                            <div class="app-logo__img-image"></div> </div>
+                            <div class="text-app">Картинки</div>
+                        </li>
+                        <li>
+                            <div class="app-logo__img-news"></div> </div>
+                            <div class="text-app">Новости</div>
+                        </li>
+                        <li>
+                            <div class="app-logo__img-map"></div> </div>
+                            <div class="text-app">Карты</div>
+                        </li>
+                        <li>
+                            <div class="app-logo__img-translate"></div> </div>
+                            <div class="text-app">Переводчик</div>
+                        </li>
+                        <li>
+                            <div class="app-logo__img-music"></div> </div>
+                            <div class="text-app">Музыка</div>
+                        </li>
+                        <li>
+                            <div class="app-logo__img-program"></div> </div>
+                            <div class="text-app">Программа</div>
+                        </li>
+                        <li>
+                            <div class="app-logo__img-ets"></div> </div>
+                            <div class="text-app">Еще</div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="container__app">
-                <ul class="flex-element">
-                    <li>
-                        <div class="app-logo__img-arenda"></div>
-                        <div class="text-app">Aренда</div>
-                    </li>
-                     <li>
-                        <div class="app-logo__img-market"></div> </div>
-                        <div class="text-app">Маркет</div>
-                    </li>
-                    <li>
-                        <div class="app-logo__img-video"></div> </div>
-                        <div class="text-app">Видео</div>
-                    </li>
-                     <li>
-                        <div class="app-logo__img-image"></div> </div>
-                        <div class="text-app">Картинки</div>
-                    </li>
-                    <li>
-                        <div class="app-logo__img-news"></div> </div>
-                        <div class="text-app">Новости</div>
-                    </li>
-                    <li>
-                        <div class="app-logo__img-map"></div> </div>
-                        <div class="text-app">Карты</div>
-                    </li>
-                    <li>
-                        <div class="app-logo__img-translate"></div> </div>
-                        <div class="text-app">Переводчик</div>
-                    </li>
-                    <li>
-                        <div class="app-logo__img-music"></div> </div>
-                        <div class="text-app">Музыка</div>
-                    </li>
-                    <li>
-                        <div class="app-logo__img-program"></div> </div>
-                        <div class="text-app">Программа</div>
-                    </li>
-                    <li>
-                        <div class="app-logo__img-ets"></div> </div>
-                        <div class="text-app">Еще</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="container__search"></div>
+                <div class="container__search"></div>
+            </main>
             <div class="sidebar"> 
 
             </div>

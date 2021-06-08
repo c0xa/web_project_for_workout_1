@@ -13,29 +13,31 @@
                     <li><a href="../../index.html">Main</a></li>
                 </ul>
             </nav>
-            <div class="content box-shadow">
-                <header class="box-shadow">
+            <div class="content border-visibility">
+                <header class="border-visibility">
                     <p>Example checkbox</p>
                 </header>
                 <section class="section__checkbox">
-                    <!-- BEGIN -->
-                    <label>
-                        <input type="checkbox" name="car" value="color-red" class="checkbox--background-initial" disabled>
-                        <span class="checkbox__img-car--color-red checkbox--background-change"></span> 
+                    <label class="checkbox__image">
+                        <input type="checkbox" class="image _hidden" disabled>
+                        <span class="image__car"></span>
+                        <span class="image__text">disabled</span>
                     </label>
-                    <label>
-                        <input type="checkbox" name="car" value="color-yellow" class="checkbox--background-initial" checked>
-                        <span class="checkbox__img-car--color-yellow checkbox--background-change"></span>
+                    <label class="checkbox-image">
+                        <input type="checkbox" class="image _hidden" checked>
+                        <span class="image__car"></span>
+                        <span class="image__text">checked</span>
                     </label>
-                    <label>
-                        <input type="checkbox" name="car"  value="color-blue" class="checkbox--background-initial">
-                        <span class="checkbox__img-car--color-blue checkbox--background-change"></span> <br>
+                    <label class="checkbox__image">
+                        <input type="checkbox" class="image _hidden" disabled checked>
+                        <span class="image__car"></span>
+                        <span class="image__text">disabled checked</span>
                     </label>
-                    <label>
-                        <input type="checkbox" name="car"  value="color-green" class="checkbox--background-initial">
-                        <span class="checkbox__img-car--color-green checkbox--background-change"></span> <br>
+                    <label class="checkbox__image">
+                        <input type="checkbox" class="image _hidden">
+                        <span class="image__car"></span>
+                        <span class="image__text">enabled</span>
                     </label>
-                    <!-- END -->
                 </section>
             </div>
             <footer>
