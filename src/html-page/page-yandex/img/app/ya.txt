@@ -13,7 +13,7 @@
                         <svg class="link__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                             <path d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"></path>
                         </svg>
-                        <span class="link__label">Москва</span>
+                        <span class="header__country">Москва</span>
                     </a>
                     <span class="header__datetime">6 июня, воскресенье 22:52</span>
                 </div>
@@ -222,6 +222,8 @@
                     </div>
                 </section>
             </main>
+            <div class="sidebar"> 
+            </div>
         </div>
     </body>
 </html>
