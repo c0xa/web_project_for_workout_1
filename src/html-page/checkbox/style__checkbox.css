@@ -5,7 +5,7 @@
     justify-content: space-around;
 }
 
-.checkbox__label._hidden {
+.checkbox__input._hidden {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,16 +30,16 @@
     overflow-wrap: normal;
 }
 
-.checkbox__label:checked + .checkbox__content::after  {
+.checkbox__input:checked + .checkbox__content::after  {
     content: url("../../img/Car16Green.svg"); 
     box-sizing: border-box;
 }
 
-.checkbox__label:disabled + .checkbox__content::after  {
+.checkbox__input:disabled + .checkbox__content::after  {
     opacity: 0.5;
 }
 
-.checkbox__label:focus + .checkbox__content::after  {
+.checkbox__input:focus + .checkbox__content::after  {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     -webkit-animation-delay: 1.5s;
     animation-delay: 1.5s;
