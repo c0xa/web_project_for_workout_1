@@ -45,21 +45,43 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     -webkit-animation-delay: 1.5s;
     animation-delay: 1.5s;
-    -webkit-animation: run 2s infinite ease-in-out;
-    animation: run 2s infinite ease-in-out;
+    /* transform: rotate(35deg); */
+    -webkit-animation: run 1s infinite ease-in-out;
+    animation: run 1s infinite ease-in-out;
 }
 
   @keyframes run {
     0% {
-      transform: translate(0%);
+        transform: rotate(0);
     }
-    25% {
-      transform: translate(10%); 
+    10% {
+        transform: rotate(36deg);
+    }
+    20% {
+        transform: rotate(72deg);
+    }
+    30% {
+        transform: rotate(108deg);
+    }
+    40% {
+        transform: rotate(144deg);
     }
     50% {
-      transform: translate(10%, 10%);
+        transform: rotate(180deg);
     }
-    75% {
-      transform: translate(0%, 10%); 
+    60% {
+        transform: rotate(216deg);
+    }
+    70% {
+        transform: rotate(252deg);
+    }
+    80% {
+        transform: rotate(288deg);
+    }
+    90% {
+        transform: rotate(324deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
   }
