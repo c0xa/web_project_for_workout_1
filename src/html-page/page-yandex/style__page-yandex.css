@@ -21,12 +21,12 @@ body {
     margin-right: 200px;
     padding-top: 8px;
     padding-left: 18px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .content {
     margin-top: 5px;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     width: 100%;
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 
-.whether__link {
+.whether__link, .app__item-title {
     color: black;
 }
 
@@ -164,4 +164,29 @@ body {
     width: 80%;
     display: flex;
     justify-content: space-between; 
+}
+
+.app {
+    height: 60px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+/* .app__item-link {
+    display: flex;
+} */
+
+.app__item-image {
+    width: 44px;
+    height: 44px;
+    vertical-align: middle;
+}
+
+.app__box-image {
+    width: 22px;
+    height: 22px;
+}
+
+.app__item-title {
+    margin: 0 0 
 }
