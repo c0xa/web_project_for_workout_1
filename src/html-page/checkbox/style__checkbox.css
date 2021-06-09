@@ -41,8 +41,6 @@
 
 .checkbox__input:focus + .checkbox__content::after  {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s;
     -webkit-animation: run 1s infinite ease-in-out;
     animation: run 1s infinite ease-in-out;
 }
