@@ -14,15 +14,17 @@
     clip: rect(0 0 0 0);   
 }
 
-.checkbox__label:after {
+
+.checkbox__content::after {
+    content: "";
+    /* content: url("../../img/Car16Green.svg");  */
     display: inline-block;
-    background-size: 100%;
     background-attachment: local;
     vertical-align: middle;
     width: 90px;
     height: 30px;
     border: 1px solid black;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 .checkbox__content {
@@ -30,15 +32,34 @@
     overflow-wrap: normal;
 }
 
-.checkbox__label:checked + .image__car {
-    background-image: url("../../img/Car16Red.svg");
+.checkbox__label:checked + .checkbox__content::after  {
+    content: url("../../img/Car16Green.svg"); 
     box-sizing: border-box;
 }
 
-.checkbox__label:disabled + .image__car {
+.checkbox__label:disabled + .checkbox__content::after  {
     opacity: 0.5;
 }
 
-.checkbox__label:focus + .image__car {
+.checkbox__label:focus + .checkbox__content::after  {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation: run 2s infinite ease-in-out;
+    animation: run 2s infinite ease-in-out;
 }
+
+  @keyframes run {
+    0% {
+      transform: translate(0%);
+    }
+    25% {
+      transform: translate(10%); 
+    }
+    50% {
+      transform: translate(10%, 10%);
+    }
+    75% {
+      transform: translate(0%, 10%); 
+    }
+  }
