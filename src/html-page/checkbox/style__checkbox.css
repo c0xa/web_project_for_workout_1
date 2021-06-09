@@ -1,11 +1,11 @@
 
-.section__checkbox {
+.app {
     display: flex;
     margin: 50px 0;
     justify-content: space-around;
 }
 
-._hidden {
+.checkbox__label._hidden {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     clip: rect(0 0 0 0);   
 }
 
-.image__car {
+.checkbox__label:after {
     display: inline-block;
     background-size: 100%;
     background-attachment: local;
@@ -25,20 +25,20 @@
     box-sizing: border-box;
 }
 
-.image__text {
+.checkbox__content {
     line-break: auto;
     overflow-wrap: normal;
 }
 
-.image:checked + .image__car {
+.checkbox__label:checked + .image__car {
     background-image: url("../../img/Car16Red.svg");
     box-sizing: border-box;
 }
 
-.image:disabled + .image__car {
+.checkbox__label:disabled + .image__car {
     opacity: 0.5;
 }
 
-.image:enabled + .image__car {
-    opacity: 1.5;
+.checkbox__label:focus + .image__car {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
