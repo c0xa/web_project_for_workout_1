@@ -14,10 +14,8 @@
     clip: rect(0 0 0 0);   
 }
 
-
 .checkbox__content::after {
     content: "";
-    /* content: url("../../img/Car16Green.svg");  */
     display: inline-block;
     background-attachment: local;
     vertical-align: middle;
@@ -45,7 +43,6 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     -webkit-animation-delay: 1.5s;
     animation-delay: 1.5s;
-    /* transform: rotate(35deg); */
     -webkit-animation: run 1s infinite ease-in-out;
     animation: run 1s infinite ease-in-out;
 }
@@ -84,4 +81,4 @@
     100% {
         transform: rotate(360deg);
     }
-  }
+}
