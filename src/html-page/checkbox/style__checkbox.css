@@ -1,8 +1,14 @@
 
 .app {
     display: flex;
-    margin: 50px 0;
+    margin: auto;
+    flex-direction: column;
+}
+
+.checkbox {
+    margin: 60px;
     justify-content: space-around;
+    display: flex;
 }
 
 .checkbox__input._hidden {
@@ -22,8 +28,49 @@
     width: 90px;
     height: 30px;
     border: 1px solid black;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    margin-left: 40px;
+    /* -webkit-animation: run 1s infinite linear;
+    animation: run 1s infinite linear;   */
 }
+
+/* ._normal.checkbox__content::after {
+    animation-direction: normal;
+}
+
+
+._reverse.checkbox__content::after {
+    animation-direction: reverse;
+}
+
+._alternate.checkbox__content::after {
+    animation-direction: alternate;
+}
+
+._alternate-reverse.checkbox__content::after {
+    animation-direction: alternate-reverse;
+} */
+
+/* ._linear.checkbox__content::after {
+    -webkit-animation: run 1s infinite linear;
+    animation: run 1s infinite linear;  
+}
+
+._ease.checkbox__content::after {
+    -webkit-animation: run 1s infinite ease;
+    animation: run 1s infinite ease;
+}
+
+._ease-in.checkbox__content::after {
+    -webkit-animation: run 1s infinite ease-in;
+    animation: run 1s infinite ease-in;
+}
+
+._ease-out.checkbox__content::after {
+    -webkit-animation: run 1s infinite ease-out;
+    animation: run 1s infinite ease-out;
+} */
+
 
 .checkbox__content {
     line-break: auto;
@@ -41,10 +88,32 @@
 
 .checkbox__input:focus + .checkbox__content::after  {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    -webkit-animation: run 1s infinite ease-in-out;
-    animation: run 1s infinite ease-in-out;
 }
 
+/* @keyframes run {
+    0% {
+        transform: translate(0%);
+    }
+    25% {
+        transform: translate(150%);
+    }
+    50% {
+        transform: translate(150%, 150%);
+    }
+    75% {
+        transform: translate(0%, 150%);
+    }
+} */
+
+/* @keyframes run {
+    to {
+        transform: translate(150%);
+    }
+    from {
+        transform: translate(-180%);
+    }
+} */
+/* 
   @keyframes run {
     0% {
         transform: rotate(0);
@@ -79,4 +148,4 @@
     100% {
         transform: rotate(360deg);
     }
-}
+} */
