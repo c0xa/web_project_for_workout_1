@@ -10,33 +10,37 @@
         white-space: nowrap;
         font-weight: 800;
     }
-    
+    &._lateral {
+        line-height: 20px;
+        color: #0054b9;
+    }
 
+    &:hover {
+        color: red;
+        transition: color .15s linear;
+    }
+
+    &.options-item__link:hover {
+        color: rgb(186, 181, 181);;
+        transition: fill .15s linear;
+    }
 
     &__title {
     line-height: 1.25;
     .font_loaded;
-        &._main {
+        &._primary {
             font-weight: 600;
+            color: #0054b9;
             font-size: 123%;
         }
-        &._news {
+        &._secondary {
             color: #6da2e1;
             font-size: 123%;
         }
-        &._widget-blue {
-            color: #0054b9;
-        }
-         
-        &._rate {
+        &._lateral {
             font-size: 26px;
-            padding-bottom: 5px;
-            margin-left: 10px;
-        }
-        &._indicator {
-            font-weight: 550;
-            text-transform: uppercase;
-            font-size: .93em;
+            text-align: center;
+            
         }
         &._login {
             width: 180px;
@@ -62,49 +66,17 @@
     }
 
     &__temp {
-        font-size: 26px;
+        &-actual {
+            font-size: 26px;
+            line-height: 40px;
+            text-align: center;
+        }
     }
 
 
     &__temp-ahead {
         font-size: 12px;
         margin-top: 5px;
-    }
-
-    &__image { 
-    display: inline-block;
-        &._app {
-            width: 44px;
-            height: 44px;
-            background-size: 44px 44px;
-        }
-        &._news {
-            width: 20px;
-            height: 20px;
-            background-size: 20px 20px;
-        }
-
-        &._logo-yandex {
-            margin: 5px;
-            width: 30px;
-            height: 30px;
-            background-size: 30px 30px;
-        }
-        &._logo {
-            float: left;
-            margin-right: 5px   ;
-            width: 30px;
-            height: 26px;
-            background-size: 30px 26px;
-        }
-
-        &._app-mini {
-            width: 15px;
-            height: 15px;
-            background-size: 15px;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
     }
 
     &__card {
@@ -115,10 +87,19 @@
         display: flex;
     }
 
-    &-background {
-        width: 50%;
-        height: 100%;
-        float: left;
-        background-color: rgb(148, 147, 147);
+    &__box {
+        padding-top: 10px;
     }
+
+}
+
+.link__title:hover {
+    fill: red;
+    color: red;
+    transition: color .15s linear;
+}
+
+.app-icon:hover, .link__box:hover {
+    transform: translateY(-5px);
+    transition: transform ease-out .15s;
 }

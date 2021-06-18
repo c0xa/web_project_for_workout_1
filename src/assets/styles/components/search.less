@@ -1,13 +1,13 @@
 .search {
     width: 100%;
-    // display: flex;
     &__box {
+        position: relative;
+        top: -100px;
         display: flex;
         box-sizing: border-box;
         margin-top: 30px;
-        margin-left: 15%;
         border: 2px solid #fc0;
-        width: 80%;
+        width: 100%;
         border-radius: .625rem;
     }
     &__input {
@@ -37,6 +37,7 @@
         border-radius: 0 .625rem .625rem 0;
     }
     &__log {
-        float: left;
+        position: relative;
+        right: 180px;
     }
 }

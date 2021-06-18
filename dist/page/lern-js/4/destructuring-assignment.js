@@ -9,6 +9,12 @@ alert( name );
 alert( age ); 
 alert( isAdmin ); 
 
+let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250
+  };
+
 function topSalary(salaries) {
     let maxSalray = 0;
     let name = "";
