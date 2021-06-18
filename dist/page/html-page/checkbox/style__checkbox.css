@@ -30,26 +30,32 @@
     border: 1px solid black;
     box-sizing: border-box;
     margin-left: 40px;
-    /* -webkit-animation: run 1s infinite linear;
-    animation: run 1s infinite linear;   */
+    content: url("../../img/Car16Green.svg"); 
+    box-sizing: border-box;
+    -webkit-animation: run1 1s infinite linear;
+    animation: run1 1s infinite linear;  
 }
 
-/* ._normal.checkbox__content::after {
+._normal.checkbox__content::after {
     animation-direction: normal;
+    /* animation: run1 1s infinite linear;   */
 }
 
 
 ._reverse.checkbox__content::after {
     animation-direction: reverse;
+    /* animation: run2 1s infinite linear;   */
 }
 
 ._alternate.checkbox__content::after {
     animation-direction: alternate;
+    /* animation: run1 1s infinite linear;   */
 }
 
 ._alternate-reverse.checkbox__content::after {
     animation-direction: alternate-reverse;
-} */
+    /* animation: run2 1s infinite linear;   */
+}
 
 /* ._linear.checkbox__content::after {
     -webkit-animation: run 1s infinite linear;
@@ -90,7 +96,7 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-/* @keyframes run {
+@keyframes run1 {
     0% {
         transform: translate(0%);
     }
@@ -103,16 +109,19 @@
     75% {
         transform: translate(0%, 150%);
     }
-} */
+}
 
-/* @keyframes run {
+@keyframes run2 {
     to {
         transform: translate(150%);
     }
-    from {
+    40% {
         transform: translate(-180%);
     }
-} */
+    from {
+        transform: translate(150%);
+    }
+}
 /* 
   @keyframes run {
     0% {

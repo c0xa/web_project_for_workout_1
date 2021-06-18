@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   margin-right: 200px;
-  padding-top: 20px;
-  padding-left: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
   color: #90919d;
 }
 .header__datetime {
-  margin-left: 9px;
+  margin-left: 15px;
 }
-.header__location-link {
-  margin-left: 4px;
+.header__options {
+  height: 32px;
 }
 .link {
   text-decoration: none;
@@ -41,7 +41,7 @@
   font-feature-settings: 'liga', 'kern';
 }
 .link__title._primary {
-  font-weight: 600;
+  font-weight: 500;
   color: #0054b9;
   font-size: 123%;
 }
@@ -52,6 +52,10 @@
 .link__title._lateral {
   font-size: 26px;
   text-align: center;
+}
+.link__title._special {
+  color: #ee7b00;
+  line-height: 1.5;
 }
 .link__title._login {
   width: 180px;
@@ -106,18 +110,18 @@ body {
 }
 .container {
   display: flex;
-  width: 900px;
+  width: 930px;
   margin: auto;
 }
 .container__left {
-  width: 65%;
+  width: 67.5%;
 }
 .container__right {
-  width: 35%;
+  width: 32.5%;
 }
 .whether__header {
   padding: 0px;
-  width: 160px;
+  width: 150px;
 }
 .whether__content {
   display: flex;
@@ -141,9 +145,6 @@ body {
   position: relative;
   right: 20px;
 }
-.options-item {
-  height: 40px;
-}
 .options-item__btn {
   position: relative;
   top: -8px;
@@ -162,16 +163,19 @@ body {
 }
 .news__header {
   display: flex;
-  width: 300px;
+  width: 278px;
   justify-content: space-between;
 }
 .news__stocks {
   display: flex;
 }
+.panel {
+  margin-top: -1px;
+}
 .panel__item {
   list-style: none;
   margin-left: -35px;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 .traffic__link._forecast {
   padding-left: 10px;
@@ -306,8 +310,8 @@ body {
 }
 .geo-icon {
   fill: #90919d;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
 }
 .header-icon {
   display: inline-block;
