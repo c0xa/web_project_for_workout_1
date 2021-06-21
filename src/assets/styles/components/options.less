@@ -4,9 +4,7 @@
     right: 20px;
 }
 
-
 .options-item {
-    height: 40px;
     &__btn {
         position: relative;
         top: -8px;
@@ -14,13 +12,20 @@
         border: 0;
         outline: 0;
         cursor: pointer;
-        background: rgba(0, 0, 0, 0);
-        color: rgb(186, 181, 181);
+        background: @default-white;
+        color: @still-grey;
         &:hover {
-            color: @custom-header;
+            .hover;
         }
     }
-    &__icon-svg {
-        color: @custom-header;
+}
+
+.options-item { 
+    &__link {
+        color: @still-grey;
+        &:hover {
+            .hover;
+        }
     }
+
 }

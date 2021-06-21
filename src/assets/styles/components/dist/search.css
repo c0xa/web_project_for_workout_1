@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin-top: 30px;
   margin-left: 15%;
-  border: 2px solid #fc0;
+  border: 2px solid @default-yellow;
   width: 80%;
   border-radius: 0.625rem;
 }
@@ -31,7 +31,7 @@
   margin: 0;
   padding: 0;
   border-color: transparent;
-  background-color: #fc0;
+  background-color: @default-yellow;
   font-size: 123.1%;
   border-radius: 0 0.625rem 0.625rem 0;
 }

@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 .whether__link {
-  color: black;
+  color: @default-black;
 }
 .whether__link_actual {
   display: flex;
@@ -18,5 +18,5 @@
   margin-top: 10px;
 }
 .app__item-title {
-  color: black;
+  color: @default-black;
 }

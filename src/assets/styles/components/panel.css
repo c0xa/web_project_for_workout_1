@@ -1,0 +1,8 @@
+.panel {
+  margin-top: -1px;
+}
+.panel__item {
+  list-style: none;
+  margin-left: -35px;
+  margin-bottom: 2px;
+}

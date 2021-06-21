@@ -3,49 +3,48 @@
     text-decoration: none;
     color: currentColor;
     &__svg {
-        fill: @custom-header;
+        fill: @primary-blue;
     }
 
     &__label { 
         white-space: nowrap;
-        font-weight: 800;
+        .font-type(@font-size-normal, @font-weight-very-bold, @font-style-custom);
     }
     &._lateral {
         line-height: 20px;
-        color: #0054b9;
+        color: @primary-blue;
     }
 
     &:hover {
-        color: red;
+        color: @hover-red;
         transition: color .15s linear;
-    }
-
-    &.options-item__link:hover {
-        color: rgb(186, 181, 181);;
-        transition: fill .15s linear;
     }
 
     &__title {
     line-height: 1.25;
-    .font_loaded;
+    .font-base;
         &._primary {
-            font-weight: 600;
-            color: #0054b9;
-            font-size: 123%;
+            .font-type(@font-size-large, @font-weight-medium, @font-style-custom);
+            color: @primary-blue;
         }
         &._secondary {
-            color: #6da2e1;
-            font-size: 123%;
+            color: @secondary-cyan;
+            .font-type(@font-size-large, @font-weight-medium, @font-style-custom);
         }
         &._lateral {
-            font-size: 26px;
-            text-align: center;
-            
+            .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
+            text-align: center;  
         }
+
+        &._special {
+            color: @alarm-orange;
+            line-height: 1.5;
+        }
+
         &._login {
+            .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
             width: 180px;
             font-size: 1.08em;
-            font-weight: 500;
             text-align: center; 
             line-height: 40px;
         }
@@ -56,18 +55,20 @@
             line-height: 100px;
             text-align: center;
             &._target {
+                .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
                 font-size: 20px;
             }
         }
     }
 
     &__date {
-        color: @custom-header;
+        line-height: 1.17;
+        color: @default-grey;
     }
 
     &__temp {
         &-actual {
-            font-size: 26px;
+            .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
             line-height: 40px;
             text-align: center;
         }
@@ -75,7 +76,7 @@
 
 
     &__temp-ahead {
-        font-size: 12px;
+        .font-type(@font-size-medial, @font-weight-medium, @font-style-custom);
         margin-top: 5px;
     }
 
@@ -94,8 +95,8 @@
 }
 
 .link__title:hover {
-    fill: red;
-    color: red;
+    fill:  @hover-red;
+    color:  @hover-red;
     transition: color .15s linear;
 }
 
