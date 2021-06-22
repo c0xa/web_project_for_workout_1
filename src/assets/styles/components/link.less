@@ -13,6 +13,8 @@
     &._lateral {
         line-height: 20px;
         color: @primary-blue;
+        // display: inline-block;
+        // transform: translateY(-15px);x
     }
 
     &:hover {
@@ -21,8 +23,8 @@
     }
 
     &__title {
-    line-height: 1.25;
-    .font-base;
+        line-height: 1.25;
+        .font-base;
         &._primary {
             .font-type(@font-size-large, @font-weight-medium, @font-style-custom);
             color: @primary-blue;
@@ -59,6 +61,11 @@
                 font-size: 20px;
             }
         }
+        &:hover {
+            fill:  @hover-red;
+            color:  @hover-red;
+            transition: color .15s linear;
+        }
     }
 
     &__date {
@@ -90,17 +97,9 @@
 
     &__box {
         padding-top: 10px;
+        &:hover {
+            transform: translateY(-5px);
+            transition: transform ease-out .15s;
+        }
     }
-
-}
-
-.link__title:hover {
-    fill:  @hover-red;
-    color:  @hover-red;
-    transition: color .15s linear;
-}
-
-.app-icon:hover, .link__box:hover {
-    transform: translateY(-5px);
-    transition: transform ease-out .15s;
 }

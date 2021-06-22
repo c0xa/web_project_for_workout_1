@@ -13,8 +13,13 @@
         border: 3px solid @default-yellow;
         border-right: 5px solid @default-yellow;
         border-radius: 10px;
-    
         outline: none;
+        &::-ms-clear {  display: none; width : 0; height: 0; }
+        &::-ms-reveal {  display: none; width : 0; height: 0; }
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration { display: none; }
     }
     &__button {
         width: 83px;
@@ -34,16 +39,14 @@
         position: absolute;
         left: 8%;
     }
-}
-
-.actions {
-    width: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    right: 24%;
-    padding-top: 8px;
-    fill: @hover-grey;
-
+    &__actions {
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        right: 24%;
+        padding-top: 8px;
+        fill: @hover-grey;
+    }
 }
