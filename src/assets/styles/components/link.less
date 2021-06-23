@@ -1,105 +1,111 @@
 
 .link {
-    text-decoration: none;
-    color: currentColor;
-    &__svg {
-        fill: @primary-blue;
+  text-decoration: none;
+  color: currentColor;
+
+  &__svg {
+    fill: @primary-blue;
+  }
+
+  &__label {
+    white-space: nowrap;
+    font-size: @font-size-normal;
+    font-width: @font-weight-very-bold;
+  }
+
+  &._lateral {
+    line-height: 20px;
+    color: @primary-blue;
+  }
+
+  &:hover {
+    color: @hover-red;
+    transition: color .15s linear;
+  }
+
+  &__title {
+    line-height: 1.25;
+    .font-base;
+
+    &._primary {
+      font-size: @font-size-big;
+      font-width: @font-weight-medium;
+      color: @primary-blue;
     }
 
-    &__label { 
-        white-space: nowrap;
-        .font-type(@font-size-normal, @font-weight-very-bold, @font-style-custom);
+    &._secondary {
+      color: @secondary-cyan;
+      font-size: @font-size-big;
+      font-width: @font-weight-midly-bold;
     }
+
     &._lateral {
-        line-height: 20px;
-        color: @primary-blue;
-        // display: inline-block;
-        // transform: translateY(-15px);x
+      font-size: @font-size-big;
+      font-width: @font-weight-medium;
+      text-align: center;
+    }
+
+    &._special {
+      color: @alarm-orange;
+      line-height: 1.5;
+    }
+
+    &._login {
+      .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
+      width: 180px;
+      font-size: 1.08em;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    &._advertising {
+      position: relative;
+      left: 40px;
+      line-height: 100px;
+      text-align: center;
+
+      &._target {
+        .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
+        font-size: 20px;
+      }
     }
 
     &:hover {
-        color: @hover-red;
-        transition: color .15s linear;
+      fill: @hover-red;
+      color: @hover-red;
+      transition: color .15s linear;
     }
+  }
 
-    &__title {
-        line-height: 1.25;
-        .font-base;
-        &._primary {
-            .font-type(@font-size-large, @font-weight-medium, @font-style-custom);
-            color: @primary-blue;
-        }
-        &._secondary {
-            color: @secondary-cyan;
-            .font-type(@font-size-large, @font-weight-medium, @font-style-custom);
-        }
-        &._lateral {
-            .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
-            text-align: center;  
-        }
+  &__date {
+    line-height: 1.17;
+    color: @default-grey;
+  }
 
-        &._special {
-            color: @alarm-orange;
-            line-height: 1.5;
-        }
-
-        &._login {
-            .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
-            width: 180px;
-            font-size: 1.08em;
-            text-align: center; 
-            line-height: 40px;
-        }
-
-        &._advertising {
-            position: relative;
-            left: 40px;
-            line-height: 100px;
-            text-align: center;
-            &._target {
-                .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
-                font-size: 20px;
-            }
-        }
-        &:hover {
-            fill:  @hover-red;
-            color:  @hover-red;
-            transition: color .15s linear;
-        }
+  &__temp {
+    &-actual {
+      .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
+      line-height: 40px;
+      text-align: center;
     }
+  }
 
-    &__date {
-        line-height: 1.17;
-        color: @default-grey;
+
+  &__temp-ahead {
+    .font-type(@font-size-medial, @font-weight-medium, @font-style-custom);
+    margin-top: 5px;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__box {
+    padding-top: 10px;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: transform ease-out .15s;
     }
-
-    &__temp {
-        &-actual {
-            .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
-            line-height: 40px;
-            text-align: center;
-        }
-    }
-
-
-    &__temp-ahead {
-        .font-type(@font-size-medial, @font-weight-medium, @font-style-custom);
-        margin-top: 5px;
-    }
-
-    &__card {
-        display: flex;
-    }
-
-    &__row {
-        display: flex;
-    }
-
-    &__box {
-        padding-top: 10px;
-        &:hover {
-            transform: translateY(-5px);
-            transition: transform ease-out .15s;
-        }
-    }
+  }
 }

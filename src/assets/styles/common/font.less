@@ -1,32 +1,6 @@
 // подключаем шрифт через font-face
 
-
-@font-face {
-  font-family: 'Yandex Sans Text';
-  src: url('fonts/YandexSansText-Regular.eot');
-  src: local('Yandex Sans Text Regular'), local('fonts/YandexSansText-Regular'), url('fonts/YandexSansText-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/YandexSansText-Regular.woff2') format('woff2'), url('fonts/YandexSansText-Regular.woff') format('woff'), url('fonts/YandexSansText-Regular.ttf') format('truetype');
-  font-weight: @font-weight-regular;
-  font-style: @font-style-custom;
-}
-
-@font-face {
-  font-family: 'Yandex Sans Text';
-  src: url('fonts/YandexSansText-Medium.eot');
-  src: local('Yandex Sans Text Medium'), local('YandexSansText-Medium'), url('fonts/YandexSansText-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/YandexSansText-Medium.woff2') format('woff2'), url('fonts/YandexSansText-Medium.woff') format('woff'), url('fonts/YandexSansText-Medium.ttf') format('truetype');
-  font-weight: @font-weight-medium;
-  font-style: @font-style-custom;
-}
-@font-face {
-  font-family: 'Yandex Sans Text';
-  src: url('fonts/YandexSansText-Bold.eot');
-  src: local('Yandex Sans Text Bold'), local('YandexSansText-Bold'), url('fonts/YandexSansText-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/YandexSansText-Bold.woff2') format('woff2'), url('fonts/YandexSansText-Bold.woff') format('woff'), url('fonts/YandexSansText-Bold.ttf') format('truetype');
-  font-weight: @font-weight-bold;
-  font-style: @font-style-custom;
-}
-@font-face {
-  font-family: 'Yandex Sans Text';
-  src: url('fonts/YandexSansText-Thin.eot');
-  src: local('Yandex Sans Text Thin'), local('fonts/YandexSansText-Thin'), url('fonts/YandexSansText-Thin.eot?#iefix') format('embedded-opentype'), url('fonts/YandexSansText-Thin.woff2') format('woff2'), url('fonts/YandexSansText-Thin.woff') format('woff'), url('fonts/YandexSansText-Thin.ttf') format('truetype');
-  font-weight: @font-weight-thin;
-  font-style: @font-style-custom;
-}
+.font-face(@font-family-yandex, 'Regular', @font-weight-regular, @font-style-custom, @font-display);
+.font-face(@font-family-yandex, 'Medium', @font-weight-medium, @font-style-custom, @font-display);
+.font-face(@font-family-yandex, 'Bold', @font-weight-bold, @font-style-custom, @font-display);
+.font-face(@font-family-yandex, 'Thin', @font-weight-thin, @font-style-custom, @font-display);

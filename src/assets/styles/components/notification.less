@@ -1,0 +1,29 @@
+.notification {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 180px;
+  padding: 5px 10px;
+
+  &__panel {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6px;
+    border-radius: 8px;
+    box-shadow: 0 0 32px rgba(0, 0, 0, .08);
+    box-sizing: border-box;
+    background: @default-white;
+    padding: 5px;
+
+    &-link {
+      margin-bottom: 8px;
+
+      &._login {
+        display: flex;
+        height: 40px;
+        background-color: #f0f0f0;
+        border-radius: 7px;
+      }
+    }
+  }
+}
