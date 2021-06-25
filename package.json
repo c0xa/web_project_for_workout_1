@@ -16,7 +16,8 @@
   },
   "homepage": "https://github.com/c0xa/web_project_for_workout_1#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "merge-stream": "^2.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",

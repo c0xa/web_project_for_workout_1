@@ -7,7 +7,9 @@ const gulp = require("gulp"),
     inject = require("gulp-inject"),
 	less = require("gulp-less"),
 	autoprefixer = require("gulp-autoprefixer"),
-	browserSync = require("browser-sync").create();
+	// replace = require("gulp-replace"),
+	browserSync = require("browser-sync").create(),
+	mergeStream = require("merge-stream");
 
 gulp.task("svgstore", function () {
 	const svgs = gulp
@@ -33,10 +35,21 @@ gulp.task("svgstore", function () {
 		return file.contents.toString();
 	}
 
-	return gulp
-		.src("./src/index.html")
-		.pipe(inject(svgs, {transform: fileContents}))
-		.pipe(gulp.dest("./src"));
+	return mergeStream(
+		gulp
+			.src("./src/index.html")
+			.pipe(inject(svgs, {transform: fileContents}))
+			.pipe(gulp.dest("./src")),
+
+		gulp
+			.src("./src/yandex-index.html")
+			.pipe(inject(svgs, {transform: fileContents}))
+			.pipe(gulp.dest("./src")),
+
+		gulp
+			.src("./src/mail-index.html")
+			.pipe(inject(svgs, {transform: fileContents}))
+			.pipe(gulp.dest("./src")));
 });
 
 gulp.task("less", function () {
@@ -47,12 +60,36 @@ gulp.task("less", function () {
 				cascade: false,
 			})
 		)
-		.pipe(dest("./dist"));
+	// pipe(replace("../../../../fonts", "src/assets/styles/common/fonts"))
+	// 	.pipe(dest("./dist"));
 });
 
 gulp.task("html", function () {
-	return gulp.src("./src/index.html").pipe(gulp.dest("./dist"));
+	return mergeStream(
+		gulp
+			.src("./src/index.html")
+			.pipe(gulp.dest("./dist")),
+
+		gulp
+			.src("./src/yandex-index.html")
+			.pipe(gulp.dest("./dist")),
+
+		gulp
+			.src("./src/mail-index.html")
+			.pipe(gulp.dest("./dist"))
+	);
 });
+
+gulp.task("fonts", function () {
+	return gulp.src("./src/assets/styles/common/**")
+		.pipe(dest("./dist/src/assets/fonts"))
+})
+
+gulp.task("page", function () {
+	return gulp.src("./src/assets/page/**")
+		.pipe(dest("./dist/src/"))
+})
+
 
 gulp.task("serve", function () {
 	browserSync.init({
@@ -63,11 +100,15 @@ gulp.task("serve", function () {
 
 	gulp.watch("./src/assets/styles/**/*.less").on("change", series("less"));
 	gulp.watch("./src/index.html").on("change", series("html"));
+	gulp.watch("./src/yandex-index.html").on("change", series("html"));
+	gulp.watch("./src/mail-index.html").on("change", series("html"));
 
-	gulp.watch("./dist/style.css").on("change", browserSync.reload);
+	gulp.watch("./dist/main.css").on("change", browserSync.reload);
 	gulp.watch("./dist/index.html").on("change", browserSync.reload);
+	gulp.watch("./dist/yandex-index.html").on("change", browserSync.reload);
+	gulp.watch("./dist/mail-index.html").on("change", browserSync.reload);
 });
 
-gulp.task("build", series("svgstore", "less", "html"));
+gulp.task("build", series("svgstore", "less", "html", "fonts", "page"));
 
-gulp.task("default", series("svgstore", parallel("html", "less"), "serve"));
+gulp.task("default", series("svgstore", parallel("html", "less", "fonts", "page"), "serve"));

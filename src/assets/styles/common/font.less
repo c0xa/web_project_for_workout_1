@@ -1,6 +1,21 @@
 // подключаем шрифт через font-face
 
-.font-face(@font-family-yandex, 'Regular', @font-weight-regular, @font-style-custom, @font-display);
-.font-face(@font-family-yandex, 'Medium', @font-weight-medium, @font-style-custom, @font-display);
-.font-face(@font-family-yandex, 'Bold', @font-weight-bold, @font-style-custom, @font-display);
-.font-face(@font-family-yandex, 'Thin', @font-weight-thin, @font-style-custom, @font-display);
+.font-face(@font-family, @font-path, @font-weight, @font-style, @font-display) {
+  @font-face {
+    font-family: @font-family;
+    src: url('fonts/YandexSansText-@{font-path}.eot');
+    src: local('fonts/Yandex Sans Text -@{font-path}'), local('../../fonts/YandexSansText-@{font-path}'),
+    url('fonts/YandexSansText-@{font-path}.eot?#iefix') format('embedded-opentype'),
+    url('fonts/YandexSansText-@{font-path}.woff2') format('woff2'),
+    url('fonts/YandexSansText-@{font-path}.woff') format('woff'),
+    url('fonts/YandexSansText-@{font-path}.ttf') format('truetype');
+    font-weight: @font-weight;
+    font-style: @font-style;
+    font-display: @font-display;
+  }
+}
+
+.font-face(@font-family-yandex, 'Regular', @font-weight-regular, @font-style-custom, @font-display-custom);
+.font-face(@font-family-yandex, 'Medium', @font-weight-medium, @font-style-custom, @font-display-custom);
+.font-face(@font-family-yandex, 'Bold', @font-weight-bold, @font-style-custom, @font-display-custom);
+.font-face(@font-family-yandex, 'Thin', @font-weight-thin, @font-style-custom, @font-display-custom);

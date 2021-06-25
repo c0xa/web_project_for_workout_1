@@ -9,13 +9,20 @@
 
   &__label {
     white-space: nowrap;
-    font-size: @font-size-normal;
-    font-width: @font-weight-very-bold;
+    .font-medium--very-bold();
   }
 
   &._lateral {
     line-height: 20px;
     color: @primary-blue;
+  }
+
+  &._specific {
+    .font-very-big--medium();
+  }
+
+  &._unseen {
+    .font-small--medium()
   }
 
   &:hover {
@@ -25,23 +32,21 @@
 
   &__title {
     line-height: 1.25;
-    .font-base;
 
     &._primary {
-      font-size: @font-size-big;
-      font-width: @font-weight-medium;
+      .font-big--midly-bold();
       color: @primary-blue;
     }
 
     &._secondary {
       color: @secondary-cyan;
-      font-size: @font-size-big;
-      font-width: @font-weight-midly-bold;
+    }
+
+    &._particular {
+      .font-big--medium();
     }
 
     &._lateral {
-      font-size: @font-size-big;
-      font-width: @font-weight-medium;
       text-align: center;
     }
 
@@ -51,9 +56,7 @@
     }
 
     &._login {
-      .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
       width: 180px;
-      font-size: 1.08em;
       text-align: center;
       line-height: 40px;
     }
@@ -64,10 +67,6 @@
       line-height: 100px;
       text-align: center;
 
-      &._target {
-        .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
-        font-size: 20px;
-      }
     }
 
     &:hover {
@@ -82,18 +81,15 @@
     color: @default-grey;
   }
 
+  &-ahead {
+    margin-top: 5px;
+  }
+
   &__temp {
     &-actual {
-      .font-type(@font-size-big, @font-weight-medium, @font-style-custom);
       line-height: 40px;
       text-align: center;
     }
-  }
-
-
-  &__temp-ahead {
-    .font-type(@font-size-medial, @font-weight-medium, @font-style-custom);
-    margin-top: 5px;
   }
 
   &__row {
