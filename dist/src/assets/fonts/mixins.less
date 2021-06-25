@@ -1,0 +1,20 @@
+// здесь задаем миксины, которые потом можно будет переиспользовать
+
+.hidden() {
+  position: absolute;
+
+  opacity: 0;
+  visibility: hidden;
+
+  top: 0;
+  left: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+.hover() {
+  color: @default-grey;
+  transition: fill .15s linear;
+}
+
+
