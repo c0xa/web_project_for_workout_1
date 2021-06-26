@@ -4,55 +4,58 @@
   color: currentColor;
 
   &__svg {
-    fill: @primary-blue;
+    fill: @yandex-primary-blue;
   }
 
   &__label {
     white-space: nowrap;
-    .font-medium--very-bold();
+    .font-medium-very-bold();
   }
 
   &._lateral {
     line-height: 20px;
-    color: @primary-blue;
+    color: @yandex-primary-blue;
   }
 
   &._specific {
-    .font-very-big--medium();
+    .font-very-big-medium();
   }
 
   &._unseen {
-    .font-small--medium()
+    .font-small-medium()
   }
 
   &:hover {
-    color: @hover-red;
+    color: @yandex-hover-red;
     transition: color .15s linear;
   }
 
   &__title {
     line-height: 1.25;
 
+    &._move {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
     &._primary {
-      .font-big--midly-bold();
-      color: @primary-blue;
+      color: @yandex-primary-blue;
     }
 
     &._secondary {
-      .font-big--midly-bold();
-      color: @secondary-cyan;
+      color: @yandex-secondary-cyan;
     }
 
     &._particular {
-      .font-big--medium();
+      .font-big-medium();
     }
 
     &._lateral {
-      text-align: center;
+      .font-big-midly-bold();
     }
 
     &._special {
-      color: @alarm-orange;
+      color: @yandex-alarm-orange;
       line-height: 1.5;
     }
 
@@ -71,15 +74,15 @@
     }
 
     &:hover {
-      fill: @hover-red;
-      color: @hover-red;
+      fill: @yandex-hover-red;
+      color: @yandex-hover-red;
       transition: color .15s linear;
     }
   }
 
   &__date {
     line-height: 1.17;
-    color: @default-grey;
+    color: @yandex-default-grey;
   }
 
   &-ahead {
@@ -93,16 +96,16 @@
     }
   }
 
-  &__row {
+  &-box__row {
     display: flex;
   }
 
   &__box {
-    padding-top: 10px;
-
     &:hover {
-      transform: translateY(-5px);
-      transition: transform ease-out .15s;
+      & .row {
+        transform: translateY(-5px);
+        transition: transform ease-out .15s;
+      }
     }
   }
 }

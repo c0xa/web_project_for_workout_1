@@ -7,7 +7,7 @@ const gulp = require("gulp"),
     inject = require("gulp-inject"),
 	less = require("gulp-less"),
 	autoprefixer = require("gulp-autoprefixer"),
-	// replace = require("gulp-replace"),
+	replace = require("gulp-replace"),
 	browserSync = require("browser-sync").create(),
 	mergeStream = require("merge-stream");
 
@@ -60,8 +60,7 @@ gulp.task("less", function () {
 				cascade: false,
 			})
 		)
-	// pipe(replace("../../../../fonts", "src/assets/styles/common/fonts"))
-	// 	.pipe(dest("./dist"));
+		.pipe(replace("../../../fonts", "src/assets/common/fonts")).pipe(dest("./dist"));
 });
 
 gulp.task("html", function () {
@@ -78,6 +77,10 @@ gulp.task("html", function () {
 			.src("./src/mail-index.html")
 			.pipe(gulp.dest("./dist"))
 	);
+});
+
+gulp.task("js", function () {
+	return gulp.src("./src/assets/js/**/*.js").pipe(gulp.dest("./dist"));
 });
 
 gulp.task("fonts", function () {
@@ -102,13 +105,15 @@ gulp.task("serve", function () {
 	gulp.watch("./src/index.html").on("change", series("html"));
 	gulp.watch("./src/yandex-index.html").on("change", series("html"));
 	gulp.watch("./src/mail-index.html").on("change", series("html"));
+	gulp.watch("./src/assets/js/**/*.js").on("change", series("js"));
 
 	gulp.watch("./dist/main.css").on("change", browserSync.reload);
 	gulp.watch("./dist/index.html").on("change", browserSync.reload);
 	gulp.watch("./dist/yandex-index.html").on("change", browserSync.reload);
+	gulp.watch("./dist/yandex-main.js").on("change", browserSync.reload);
 	gulp.watch("./dist/mail-index.html").on("change", browserSync.reload);
 });
 
-gulp.task("build", series("svgstore", "less", "html", "fonts", "page"));
+gulp.task("build", series("svgstore", "less", "html", "js", "fonts", "page"));
 
-gulp.task("default", series("svgstore", parallel("html", "less", "fonts", "page"), "serve"));
+gulp.task("default", series("svgstore", parallel("html", "less", "js", "fonts", "page"), "serve"));

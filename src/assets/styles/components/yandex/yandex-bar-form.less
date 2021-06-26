@@ -9,10 +9,17 @@
     height: 40px;
 
     padding-left: 9px;
-    border: 3px solid @default-yellow;
-    border-right: 5px solid @default-yellow;
+    border: 3px solid @yandex-default-yellow;
+    border-right: 5px solid @yandex-default-yellow;
     border-radius: 10px;
     outline: none;
+
+    &::-webkit-search-results-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration,
+    &::-webkit-search-results-button {
+      display: none;
+    }
 
     &::-ms-clear {
       display: none;
@@ -30,12 +37,12 @@
   &__button {
     width: 83px;
     height: 40px;
-    .font-big--medium();
+    .font-big-medium();
     margin-left: -7px;
     border: none;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: @default-yellow;
+    background-color: @yandex-default-yellow;
 
     outline: none;
     cursor: pointer;
@@ -49,6 +56,6 @@
     position: relative;
     right: 150px;
     padding-top: 8px;
-    fill: @hover-grey;
+    fill: @yandex-hover-grey;
   }
 }

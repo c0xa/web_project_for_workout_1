@@ -30,44 +30,38 @@
     font-style: @font-style-custom;
 }
 
+.font-type(@size; @weight) {
+    .font-custom();
+    font-size: @size;
+    font-weight: @weight;
+}
+
 .font-custom() {
     font-family: @font-family-primary;
     font-display: @font-display-custom;
     font-style: @font-style-custom;
 }
 
-.font-big--medium() {
-    .font-custom();
-    font-size: @font-size-big;
-    font-weight: @font-weight-medium;
+.font-big-medium() {
+    .font-type(@font-size-big, @font-weight-medium);
 }
 
-.font-very-big--medium() {
-    .font-custom();
-    font-size: @font-size-very-big;
-    font-weight: @font-weight-medium;
+.font-very-big-medium() {
+    .font-type(@font-size-very-big, @font-weight-medium);
 }
 
-.font-big--midly-bold() {
-    .font-custom();
-    font-size: @font-size-big;
-    font-weight: @font-weight-midly-bold;
+.font-big-midly-bold() {
+    .font-type(@font-size-big, @font-weight-midly-bold);
 }
 
-.font-medium--very-bold() {
-    .font-custom();
-    font-size: @font-size-medium;
-    font-weight: @font-weight-very-bold
+.font-medium-very-bold() {
+    .font-type(@font-size-medium, @font-weight-very-bold);
 }
 
-.font-medium--medium() {
-    .font-custom();
-    font-size: @font-size-medium;
-    font-weight: @font-weight-medium;
+.font-medium-medium() {
+    .font-type(@font-size-medium, @font-weight-medium);
 }
 
-.font-small--medium() {
-    .font-custom();
-    font-size: @font-size-small;
-    font-weight: @font-weight-medium;
+.font-small-medium() {
+    .font-type(@font-size-small, @font-weight-medium);
 }
