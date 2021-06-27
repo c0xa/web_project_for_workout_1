@@ -1,0 +1,41 @@
+.option {
+  &__item {
+    display: inline-flex;
+    height: 28px;
+    align-items: center;
+    padding: 4px 8px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    vertical-align: middle;
+    user-select: none;
+
+    &._primary {
+      color: @mail-primary-blue;
+
+      &:hover {
+        background-color: @mail-hover-grey;
+        color: @default-black;
+      }
+    }
+
+    &._secondary {
+      color: @default-white;
+      background-color: @mail-primary-blue;
+    }
+
+    :hover {
+      color: currentColor;
+    }
+  }
+
+  &__link {
+    color: @default-black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.horoscope-link {
+  text-decoration: none;
+
+  &__image {
+    align-items: center;
+    margin: 5px 15px;
+    float: left;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #0dc268;
+  }
+
+  &__title {
+    display: block;
+
+    &._ma-primary {
+      line-height: 20px;
+      text-decoration: none;
+      .font-pre-big-regular();
+      color: @default-black;
+    }
+
+    &._ma-secondary {
+      .font-normal-regular();
+      color: @mail-custom-grey;
+
+    }
+  }
+}

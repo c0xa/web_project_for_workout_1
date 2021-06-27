@@ -1,0 +1,37 @@
+.ma-value {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+
+  &__course {
+    .font-pre-big-regular();
+    color: @default-black;
+  }
+
+  &__diff {
+    .font-medium-medium();
+
+    &._rice {
+      color: @mail-rice-green;
+    }
+
+    &._decline {
+      color: @mail-decline-red;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+
+    &._rice {
+      fill: @mail-rice-green;
+      transform: rotate(180deg);
+    }
+
+    &._decline {
+      fill: @mail-decline-red;
+    }
+  }
+}

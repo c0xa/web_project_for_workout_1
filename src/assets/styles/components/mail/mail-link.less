@@ -1,0 +1,66 @@
+.ma-link {
+  text-decoration: none;
+  color: @mail-primary-blue;
+
+  &:not(._not-hover):hover {
+    text-decoration: underline;
+  }
+
+  &._subject {
+    display: inline-block;
+    width: 40px;
+    color: @default-black;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: .8px;
+    .font-normal-very-bold();
+  }
+
+  &._primary {
+    .font-normal-very-bold();
+    color: @default-black;
+  }
+
+  &__temp {
+    .font-very-big-very-bold();
+    color: @default-black;
+    float: left;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__title {
+    text-decoration: none;
+    color: @default-black;
+
+    &._special {
+      text-decoration: none;
+      display: inline-block;
+      padding-left: 400px;
+      .font-small-medium();
+      height: 16px;
+      line-height: 16px;
+    }
+
+    &._usually {
+      display: block;
+      height: 16px;
+      line-height: 16px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &._primary {
+      display: block;
+      .font-very-big-very-bold();
+      margin-left: 60px;
+    }
+  }
+}

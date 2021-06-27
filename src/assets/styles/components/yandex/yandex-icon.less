@@ -32,6 +32,26 @@
   padding-top: 5px;
 }
 
+.actions__icon {
+  .create-icon(30px, 20px, 30px);
+}
+
+.actions__icon.close-icon {
+  position: relative;
+  fill: @yandex-hover-grey;
+  right: 10px;
+  opacity: 0;
+}
+
+close-icon {
+  .create-icon(30px, 20px, 30px);
+}
+
+
+.actions__icon.close-icon:hover {
+  fill: @default-black;
+}
+
 .app-icon {
   display: inline-block;
   margin: 0 auto;
@@ -110,6 +130,10 @@
   &._hidden {
     opacity: 0;
   }
+}
+
+._hidden {
+  opacity: 0;
 }
 
 .dots-horizont-icon {

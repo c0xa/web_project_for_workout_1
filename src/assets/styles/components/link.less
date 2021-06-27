@@ -8,8 +8,14 @@
   }
 
   &__label {
-    white-space: nowrap;
-    .font-medium-very-bold();
+    &._dedicated {
+      white-space: nowrap;
+      .font-medium-very-bold();
+    }
+
+    &._lateral {
+      .font-normal-very-bold();
+    }
   }
 
   &._lateral {
