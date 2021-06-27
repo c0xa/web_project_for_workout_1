@@ -636,6 +636,7 @@ close-icon {
 }
 .ma-information {
   height: 32px;
+  width: 1200px;
 }
 .ma-information__link {
   display: inline-flex;
