@@ -7,17 +7,17 @@
 
   &__link {
     text-decoration: none;
-    color: @default-black;
+    color: @default-black !important;
     margin-left: 24px;
     display: inline-block;
     height: 24px;
 
     &._ma-primary {
-      color: @mail-primary-blue;
+      color: @mail-primary-blue !important;
       border-bottom: 1px solid @mail-primary-blue;
     }
 
-    &:hover {
+    &:not(._ma-primary ):hover {
       border-bottom: 1px solid @mail-hover-grey;
     }
 

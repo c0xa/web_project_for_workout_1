@@ -158,6 +158,11 @@
 .wrapper._mail-flag * {
   outline-color: #000;
 }
+@media screen and (max-width: 1300px) {
+  .wrapper._mail-flag {
+    width: 1400px;
+  }
+}
 .container._yandex-mark {
   display: flex;
   width: 920px;
@@ -859,16 +864,16 @@ close-icon {
 }
 .ma-nav__link {
   text-decoration: none;
-  color: #000;
+  color: #000 !important;
   margin-left: 24px;
   display: inline-block;
   height: 24px;
 }
 .ma-nav__link._ma-primary {
-  color: #005bd1;
+  color: #005bd1 !important;
   border-bottom: 1px solid #005bd1;
 }
-.ma-nav__link:hover {
+.ma-nav__link:not(._ma-primary ):hover {
   border-bottom: 1px solid #e4e4e4;
 }
 .ma-nav__link._ma-primary {
@@ -924,7 +929,6 @@ close-icon {
   font-style: normal;
   font-size: 13px;
   font-weight: 700;
-  color: #000;
 }
 .ma-link__temp {
   font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
@@ -944,6 +948,9 @@ close-icon {
 .ma-link__title {
   text-decoration: none;
   color: #000;
+}
+.ma-link__title._ma-secondary {
+  color: #005bd1;
 }
 .ma-link__title._special {
   text-decoration: none;
@@ -1002,7 +1009,7 @@ close-icon {
   margin-left: 15px;
 }
 .left {
-  height: 500px;
+  height: 555px;
 }
 .left__authentication {
   width: 100%;
