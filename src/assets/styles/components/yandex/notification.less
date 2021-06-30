@@ -1,0 +1,29 @@
+.ya-notification {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    padding: 5px 10px;
+
+    &__panel {
+        display: flex;
+        flex-direction: column;
+        margin-right: 6px;
+        border-radius: 8px;
+        box-shadow: 0 0 32px @shadow-grey;
+        box-sizing: border-box;
+        background: @default-white;
+        padding: 5px;
+
+        &-link {
+            margin-bottom: 8px;
+
+            &._login {
+                display: flex;
+                height: 40px;
+                background-color: @yandex-custom-grey;
+                border-radius: 7px;
+            }
+        }
+    }
+}

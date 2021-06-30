@@ -1,0 +1,29 @@
+&.ma-divide {
+    display: inline-block;
+    height: 25px;
+    border-bottom: 1px solid @mail-hover-grey;
+    line-height: 20px;
+    width: 100%;
+
+    &__link {
+        text-decoration: none;
+        color: @default-black !important;
+        margin-left: 24px;
+        display: inline-block;
+        height: 24px;
+
+        &._ma-primary {
+            color: @mail-primary-blue !important;
+            border-bottom: 1px solid @mail-primary-blue;
+        }
+
+        &:not(._ma-primary ):hover {
+            border-bottom: 1px solid @mail-hover-grey;
+        }
+
+        &._ma-primary {
+            .font-pre-big-very-bold();
+            margin-left: 0;
+        }
+    }
+}

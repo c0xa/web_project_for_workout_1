@@ -1,31 +1,31 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-
-  &._yandex-mark {
-    margin-right: 200px;
-    padding-top: 15px;
-    padding-left: 18px;
-    color: @yandex-default-grey;
-    .font-medium-medium();
-  }
-
-  &._mail-mark {
-    color: @default-black;
-    .font-normal-regular();
-    padding: 4px 12px;
-  }
-
-  &__option {
     display: flex;
     justify-content: space-between;
 
-    &._mail-mark {
-      .font-normal-regular();
+    &._yandex-mark {
+        margin-right: 200px;
+        padding-top: 15px;
+        padding-left: 18px;
+        color: @yandex-default-grey;
+        .font-medium-medium();
     }
-  }
 
-  &__options {
-    height: 32px;
-  }
+    &._mail-mark {
+        color: @default-black;
+        .font-normal-regular();
+        padding: 4px 12px;
+    }
+
+    &__option {
+        display: flex;
+        justify-content: space-between;
+
+        &._mail-mark {
+            .font-normal-regular();
+        }
+    }
+
+    &__options {
+        height: 32px;
+    }
 }
