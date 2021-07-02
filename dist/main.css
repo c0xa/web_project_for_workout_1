@@ -1314,7 +1314,7 @@ close-icon {
   border-bottom: 1px solid #005bd1;
 }
 .ma-divide__link:not(._ma-primary ):hover {
-  border-bottom: 1px solid #919399;
+  border-bottom: 1px solid #e4e4e4;
 }
 .ma-divide__link._ma-primary {
   font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
