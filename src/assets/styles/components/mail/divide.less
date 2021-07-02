@@ -1,24 +1,29 @@
 &.ma-divide {
     display: inline-block;
+
     height: 25px;
-    border-bottom: 1px solid @mail-hover-grey;
-    line-height: 20px;
     width: 100%;
 
+    line-height: 20px;
+
+    border-bottom: 1px solid @mail-hover-grey;
+
     &__link {
-        text-decoration: none;
-        color: @default-black !important;
-        margin-left: 24px;
         display: inline-block;
+
         height: 24px;
 
+        text-decoration: none;
+        color: @default-black;
+        margin-left: 24px;
+
         &._ma-primary {
-            color: @mail-primary-blue !important;
+            color: @mail-primary-blue;
             border-bottom: 1px solid @mail-primary-blue;
         }
 
         &:not(._ma-primary ):hover {
-            border-bottom: 1px solid @mail-hover-grey;
+            border-bottom: 1px solid @mail-default-grey;
         }
 
         &._ma-primary {

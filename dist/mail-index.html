@@ -28,9 +28,6 @@
                 <span class="ma-link__label">Игры</span>
             </a>
             <a class="ma-information__link ma-link _not-hover" href="#">
-                <span class="ma-link__label">Игры</span>
-            </a>
-            <a class="ma-information__link ma-link _not-hover" href="#">
                 <span class="ma-link__label">Знакомства</span>
             </a>
             <a class="ma-information__link ma-link _not-hover" href="#">
@@ -55,25 +52,25 @@
                 </svg>
             </a>
         </div>
-        <div class="header__option option _mail-mark">
-            <div class="option__item _primary ">
-                <a href="#" class="option__item-link ma-link">
+        <div class="header__option ma-option _mail-mark">
+            <div class="ma-option__item _primary ">
+                <a href="#" class="ma-option__item-link ma-link">
                     <span class="ma-link__label">Регистрация</span>
                 </a>
             </div>
-            <div class="option__item _secondary">
-                <a href="#" class="option__item-link ma-link">
+            <div class="ma-option__item _secondary">
+                <a href="#" class="ma-option__item-link ma-link">
                     <span class="ma-link__label">Войти</span>
                 </a>
             </div>
         </div>
     </header>
     <main class="content">
-        <section class="container _mail-mark">
-            <div class="container__nav ma-nav">
-                <div class="ma-nav__authentication authentication">
-                    <a class="authentication__image" href="#"></a>
-                    <div class="authentication__header ma-header">
+        <section class="ma-container _mail-mark">
+            <div class="ma-container__nav ma-nav">
+                <div class="ma-nav__authentication ma-authentication">
+                    <a class="ma-authentication__image" href="#"></a>
+                    <div class="ma-authentication__header ma-header">
                         <a class="ma-header__title" href="#">Почта</a>
                         <div class="ma-header__box ma-box">
                             <a class="ma-box__icon" href="#">
@@ -93,11 +90,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="authentication__form">
+                    <div class="ma-authentication__form">
                         <form class="form form-login" action="#">
-                            <div class="form-login__entry entry">
-                                <input class="entry__input" type="text" placeholder="Имя ящика">
-                                <select class="entry__select" name="mail-type" id="select-input">
+                            <div class="form-login__entry ma-entry">
+                                <input class="ma-entry__input" type="text" placeholder="Имя ящика">
+                                <select class="ma-entry__select" name="mail-type" id="select-input">
                                     <option value="mail" selected>@mail.ru</option>
                                     <option value="inbox">@inbox.ru</option>
                                     <option value="list">@list.ru</option>
@@ -107,7 +104,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="authentication__button button">
+                    <div class="ma-authentication__button button">
                         <button class="button__login login" type="button">
                             <span class="login__title">Ввести пароль</span>
                             <svg class="login-button__icon ma-button-icon">
@@ -115,17 +112,17 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="authentication__option option">
-                        <label class="option__label label" for="saveauth">
+                    <div class="ma-authentication__option ma-option">
+                        <label class="ma-option__label label" for="saveauth">
                             <input class="label__input" type="checkbox" id="saveauth" name="saveauth">
                             <span class="label__text">Запомнить</span>
                         </label>
-                        <a class="option__link" href="#">Забыли пароль?</a>
+                        <a class="ma-option__link" href="#">Забыли пароль?</a>
                     </div>
-                    <button class="authentication__create create" type="button">
+                    <button class="ma-authentication__create create" type="button">
                         <span class="create__title">Создать почту</span>
                     </button>
-                    <button class="authentication__vk-connect vk-connect" type="button">
+                    <button class="ma-authentication__vk-connect vk-connect" type="button">
                         <svg class="vk-connect__icon">
                             <use href="#icon-mail-vk"></use>
                         </svg>
@@ -191,18 +188,18 @@
                         </div>
                     </a>
                 </div>
-                <div class="ma-nav__horoscope horoscope">
-                    <a class="horoscope-link" href="#">
-                        <div class="horoscope-link__image">
+                <div class="ma-nav__horoscope ma-horoscope">
+                    <a class="ma-horoscope-link" href="#">
+                        <div class="ma-horoscope-link__image">
                             <img class="image horoscope__icon" src="//limg.imgsmail.ru/assets/horo_icons/all.svg"
                                  alt="">
                         </div>
-                        <span class="horoscope-link__title _ma-primary">Гороскоп</span>
-                        <span class="horoscope-link__title _ma-secondary">Начало дня будет довольно напряженным.</span>
+                        <span class="ma-horoscope-link__title _ma-primary">Гороскоп</span>
+                        <span class="ma-horoscope-link__title _ma-secondary">Начало дня будет довольно напряженным.</span>
                     </a>
                 </div>
             </div>
-            <div class="container__main main">
+            <div class="ma-container__main main">
                 <div class="main__tab ma-tab">
                     <a href="#" class="ma-tab__link ma-link _ma-primary">
                         <span class="ma-link__title _ma-secondary">Поиск в интернете</span>
@@ -336,15 +333,15 @@
                         </div>
 
                         <div class="panel__item ma-item">
-                            <div class="ma-item__target target">
-                                <a class="target__link _primary ma-link _not-hover" href="#">
+                            <div class="ma-item__target ma-target">
+                                <a class="ma-target__link _primary ma-link _not-hover" href="#">
                                     <img class="ma-link__image ma-icon-target"
                                          src="https://r.mradx.net/img/BB/17636D.jpg" alt="">
                                     <span class="ma-link__title _special">Реклама myTarget</span>
                                     <span class="ma-link__title _usually">Стань средневековым правителем</span>
                                     <span class="ma-link__title _usually">Добейся процветания королевства в новой RPG</span>
                                 </a>
-                                <a class="target__link _secondary ma-link _not-hover" href="#">
+                                <a class="ma-target__link _secondary ma-link _not-hover" href="#">
                                     <img class="ma-panel__image target-icon" src="https://r.mradx.net/img/22/B756D6.png"
                                          alt="">
                                 </a>
