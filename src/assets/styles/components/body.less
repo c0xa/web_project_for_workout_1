@@ -1,23 +1,29 @@
 .wrapper {
-  .font-main();
+    .font-main();
 
-  &._yandex-flag {
-    * {
-      outline-color: @yandex-alarm-orange;
+    &._yandex-flag {
+        * {
+            outline-color: @yandex-alarm-orange;
+        }
     }
-  }
 
-  &._mail-flag {
-    * {
-      outline-color: @default-black;
+    &._mail-flag {
+        * {
+            outline-color: @default-black;
+        }
     }
-  }
+
+    &._css-tricks-flag {
+        * {
+            outline-color: @default-white;
+        }
+    }
 
 }
 
 @media screen and (max-width: 1300px) {
-  .wrapper._mail-flag {
-    width: 1400px;
-  }
+    .wrapper._mail-flag {
+        width: 1400px;
+    }
 }
 

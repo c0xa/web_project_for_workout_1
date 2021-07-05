@@ -1,126 +1,145 @@
 body {
-    background-color: rgb(220, 226, 220);
+    margin: 0;
 }
 
 .wrapper {
-    width: 80%;
+    background-color: rgb(53, 55, 79);
+    background-clip: content-box;
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        width: 1400px;
+    }
+}
+
 .content {
-    width: 60%;
-    background-color: rgb(219, 217, 213);
+    position: static;
+    display: grid;
+    width: 100%;
+    min-height: 780px;
+    margin-top: -120px;
+    grid-template-rows: repeat(9, min-content) 1fr;
+    grid-template-columns: 100%;
+}
+
+.state {
+    position: relative;
+    left: 30%;
+    color: rgb(224, 214, 194);
+    width: 70%;
+    height: 700px;
+}
+
+.state-yandex {
+    background-color: rgb(235, 210, 219);
+    grid-area: 1 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+.link__item:hover {
+    color: rgb(114, 7, 7);
+}
+
+.link {
+    position: relative;
+    top: 18%;
+    background: transparent;
+}
+
+.img-site {
+    display: block;
+    width: 700px;
+    height: 450px;
+    background-size: 20%;
+    opacity: 0.9;
     margin: auto;
 }
 
-.clearfix {
-    clear: both;
+.img-site:hover {
+    opacity: 1;
 }
 
-.border-visibility {
-    border: 2px solid rgb(219, 217, 213);
-    box-shadow: inset 0 -3em 3em rgba(196, 187, 187, 0.808),
-                0 0  0 2px rgba(196, 187, 187, 0.808),
-                0.3em 0.3em 1em rgba(151, 151, 151, 0.3);
+.state-mail {
+    grid-area: 5 / 1 / 6 / 2;
+    background-color: rgb(255, 211, 166);
+    justify-self: start;
+    align-self: start;
 }
 
-/*HEADER
-======================*/
-
-header {
-    height: 100px;
-    background-color: grey;
-    
+.state-css-tricks {
+    grid-area: 6 / 1 / 7 / 2;
+    background-color: rgb(236, 236, 236);
+    justify-self: start;
+    align-self: start;
 }
 
-header p {
-    color: white;
-    overflow: auto;
-    font-family: 'trebuchet ms';
-    white-space: pre-wrap;
-    font-size: 40px;
-    
+.link__img-css-tricks {
+    padding-top: 10%;
+    opacity: 0.1;
 }
 
-/*SECTION
-======================*/
-
-.main {
-    height: 500px;
+.link__img-css-tricks:hover {
+    opacity: 0.1;
 }
 
-.main p {
-    font-family: 'Arvo', serif;
-    color: rgb(58, 12, 12);
-    text-align: center;
-    padding-top: 2%;
+.side-footer-wrapper {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    grid-area: 9 / 1 / 10 / 2;
 }
 
-/*SIDEBAR
-======================*/
-
-.sidebar {
+.navigation {
     position: fixed;
-    top: 0px;
-    height: 100%;
-    width: 15%;
+    top: 50%;
+    left: 200px;
 }
 
-._html-css {
-    left: 10%;
-}
-
-._js {
-    right: 10%;
-}
-
-.sidebar__link._title {
-    background-color: rgb(220, 226, 220);
-    color: black;
-}
-
-.sidebar__link {
-    display: block;
-    background-color: grey;
-    height: 3%;
-    margin: 5px;
-    border-radius: 10px;
-    min-height: 2%;
-    text-decoration: none;
-    line-height: 15px;
-    text-align: center;
-    color: white;
-    font-family: 'Arvo', serif;
-    font-size: 15px;
-}
-
-.sidebar__link:hover {
-    color: rgb(18, 18, 77);
-}
-
-.view-element {
-    box-shadow: inset 0 -3em 3em rgba(240, 174, 174, 0.808),
-                0 0  0 2px rgba(219, 117, 117, 0.808),
-                0.3em 0.3em 1em rgba(179, 104, 104, 0.3);
-    box-sizing: content-box;
-}
-
-.flex-element {
+.navigation__link {
     display: flex;
-    margin: 0px;
-    justify-content: space-around;
+    flex-direction: column;
+    color: white;
 }
 
-/*bottom section 
-======================*/
-
-.bottom-section {
-    height: 20%;
-    background-color: rgb(220, 226, 220);
+.link__item {
+    color: white;
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
 }
 
-.bottom-section p {
-    color: rgba(49, 46, 46, 0.63);
-    text-align: center;
-    padding: auto;
+.side-footer-wrapper__img {
+    display: flex;
+
+
+    padding-top: 50px;
+    width: 100%;
+}
+
+.img {
+    width: 55px;
+    height: 55px;
+    background-size: 55px;
+}
+
+.img__link-info {
+    margin-left: 5%;
+}
+
+.img__link-chat {
+    margin-left: 75%;
+}
+
+.img__link-message {
+    margin-left: 5%;
 }

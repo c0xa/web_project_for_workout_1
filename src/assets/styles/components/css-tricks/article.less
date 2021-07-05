@@ -1,0 +1,25 @@
+.ct-article {
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 0;
+
+    width: calc(100% - 140px);
+    height: 330px;
+
+    margin: auto;
+
+    border-radius: 20px;
+    opacity: 1.8;
+    background-color: @default-white;
+
+    &__image {
+        display: inline-block;
+
+        .create-icon(120%, 100%, 120% 100%);
+
+        border-radius: 20px;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+}

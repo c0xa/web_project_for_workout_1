@@ -1,3 +1,14 @@
+._move{
+    transform: translateX(-40px);
+    transition: transform .100s;
+}
+
+._view {
+    transition: fill .20s;
+    fill: @shadow-grey !important;
+}
+
+
 .ya-covid-histogram {
     cursor: pointer;
     margin-top: 10px;
@@ -6,6 +17,7 @@
     box-sizing: border-box;
     padding: 12px 14px;
     background: @default-white;
+    z-index: 5;
 
     &__title {
         &._selected {
@@ -19,8 +31,10 @@
 
     &__icon {
         position: relative;
-        width: 30px;
-        height: 30px;
-        left: 40px;
+        bottom: 40px;
+        left: 150px;
+        fill: @default-white;
+        .create-icon(20px, 20px, 20px);
+        cursor: pointer;
     }
 }

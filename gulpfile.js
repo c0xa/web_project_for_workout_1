@@ -47,9 +47,15 @@ gulp.task("svgstore", function () {
 			.pipe(gulp.dest("./src")),
 
 		gulp
+			.src("./src/css-tricks-index.html")
+			.pipe(inject(svgs, {transform: fileContents}))
+			.pipe(gulp.dest("./src")),
+
+		gulp
 			.src("./src/mail-index.html")
 			.pipe(inject(svgs, {transform: fileContents}))
 			.pipe(gulp.dest("./src")));
+	
 });
 
 gulp.task("less", function () {
@@ -72,6 +78,11 @@ gulp.task("html", function () {
 		gulp
 			.src("./src/yandex-index.html")
 			.pipe(gulp.dest("./dist")),
+
+		gulp
+			.src("./src/css-tricks-index.html")
+			.pipe(gulp.dest("./dist")),
+
 
 		gulp
 			.src("./src/mail-index.html")
@@ -105,12 +116,14 @@ gulp.task("serve", function () {
 	gulp.watch("./src/index.html").on("change", series("html"));
 	gulp.watch("./src/yandex-index.html").on("change", series("html"));
 	gulp.watch("./src/mail-index.html").on("change", series("html"));
+	gulp.watch("./src/css-tricks-index.html").on("change", series("html"));
 	gulp.watch("./src/assets/js/**/*.js").on("change", series("js"));
 
 	gulp.watch("./dist/main.css").on("change", browserSync.reload);
 	gulp.watch("./dist/index.html").on("change", browserSync.reload);
 	gulp.watch("./dist/yandex-index.html").on("change", browserSync.reload);
 	gulp.watch("./dist/yandex-main.js").on("change", browserSync.reload);
+	gulp.watch("./dist/css-tricks-index.js").on("change", browserSync.reload);
 	gulp.watch("./dist/mail-index.html").on("change", browserSync.reload);
 });
 

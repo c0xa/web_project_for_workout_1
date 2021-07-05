@@ -7,57 +7,45 @@
 </head>
 <body>
 <div class="wrapper">
-    <nav class="sidebar _html-css">
-        <a class="sidebar__link link _title" href="">HTML & CSS</a>
-        <a class="sidebar__link link view-element" href="yandex-index.html">Yandex</a>
-        <a class="sidebar__link link view-element" href="mail-index.html">Mail</a>
-        <a class="sidebar__link link" href="src/html-page/checkbox-original/checkbox.html">Original checkbox</a>
-        <a class="sidebar__link link" href="src/html-page/checkbox/checkbox.html">Animation</a>
-        <a class="sidebar__link link" href="src/html-page/chess-board/chess-board.html">Chess board</a>
-        <a class="sidebar__link link" href="src/html-page/pseudo_classes/pseudo_classes-and-pseudo_element.html">Pseudo-classes</a>
-        <a class="sidebar__link link" href="src/html-page/flex-element/flex-element.html">CSS Flexible Box</a>
-        <a class="sidebar__link link" href="src/html-page/grid-element/grid-element.html">CSS grid</a>
-        <a class="sidebar__link link" href="src/html-page/box-task/box-task.html">Box-task</a>
-        <a class="sidebar__link link" href="src/html-page/css-text/css-text.html">Css-text</a>
-        <a class="sidebar__link link" href="src/html-page/css-font/css-font.html">Css-font</a>
-        <a class="sidebar__link link" href="src/html-page/css-link/css-link.html">Css-link</a>
-        <a class="sidebar__link link" href="src/html-page/css-list/css-list.html">Css-list</a>
-        <a class="sidebar__link link" href="src/html-page/css-background/css-background.html">Css-background</a>
-        <a class="sidebar__link link" href="src/html-page/css-border/css-border.html">Css-border</a>
-        <a class="sidebar__link link" href="src/html-page/css-content/css-content.html">Css-content</a>
-        <a class="sidebar__link link" href="src/html-page/css-ui/css-ui.html">Css-ui</a>
-        <a class="sidebar__link link" href="src/html-page/css-gradient/css-gradient.html">Css-gradient</a>
-        <a class="sidebar__link link" href="src/html-page/css-shadow/css-shadow.html">Css-shadow</a>
-        <a class="sidebar__link link" href="src/html-page/css-transition/css-transition.html">Css-transition</a>
-        <a class="sidebar__link link" href="src/html-page/css-transform/css-transform.html">Css-transform</a>
-        <a class="sidebar__link link" href="src/html-page/css-table/css-table.html">Css-table</a>
-        <a class="sidebar__link link" href="src/html-page/block-element/block-element.html">Block element</a>
-        <a class="sidebar__link link" href="src/html-page/position/position.html">Position</a>
-        <a class="sidebar__link link" href="src/html-page/box-sizing/box-sizing.html">Box-sizing</a>
-    </nav>
-    <nav class="sidebar _js">
-        <a class="sidebar__link link _title" href="">JS</a>
-        <a class="sidebar__link link view-element" href="src/lern-js/1/1.html">Основы JavaScript</a>
-        <a class="sidebar__link link view-element" href="src/lern-js/2/1.html">Качество кода</a>
-        <a class="sidebar__link link view-element" href="src/lern-js/3/1.html">Объекты: основы</a>
-        <a class="sidebar__link link view-element" href="src/lern-js/4/1.html">Типы данных</a>
-        <a class="sidebar__link link view-element" href="src/lern-js/5/1.html">Работа с функциями</a>
-
-    </nav>
-    <div class="content border-visibility">
-        <header class="border-visibility">
-            <p>Example</p>
-        </header>
-        <main class="main">
-            <p>In process: Page yandex </p>
-            <p>In process: Page mail </p>
+    <div class="container">
+        <nav class="navigation">
+            <div class="navigation__link link">
+                <a class="link__item item-yandex" href="#yandex">Yandex</a>
+                <a class="link__item item-mail" href="#mail">Mail</a>
+                <a class="link__item item-css-tricks" href="#css-tricks">Css tricks</a>
+            </div>
+        </nav>
+        <main class="content__state">
+            <section class="state state-yandex" id="yandex">
+                <a class="state-yandex__link link" href="yandex-index.html">
+                    <img class="link__img-yandex img-site" src="src/img/yandex.png" alt="">
+                </a>
+            </section>
+            <section class="state state-mail" id="mail">
+                <a class="state-mail__link link" href="mail-index.html">
+                    <img class="link__img-mail img-site" src="src/img/mail.png" alt="">
+                </a>
+            </section>
+            <section class="state state-css-tricks" id="css-tricks">
+                <a class="state-css-tricks__link" href="css-tricks-index.html">
+                    <img class="link__img-css-tricks img-site" src="src/img/mail.png" alt="">
+                </a>
+            </section>
+            <footer class="side-footer-wrapper">
+                <div class="side-footer-wrapper__img">
+                    <a class="img__link-info" href="https://github.com/c0xa">
+                        <img class="img img-info" src="src/img/info.svg" alt="">
+                    </a>
+                    <a class="img__link-chat" href="https://github.com/c0xa">
+                        <img class="img img-chat" src="src/img/chat.svg" alt="">
+                    </a>
+                    <a class="img__link-message" href="https://github.com/c0xa">
+                        <img class="img img-message" src="src/img/message.svg" alt="">
+                    </a>
+                </div>
+            </footer>
         </main>
     </div>
-    <footer>
-        <div class="bottom-section">
-            <p>2021</p>
-        </div>
-    </footer>
 </div>
 </body>
 </html>

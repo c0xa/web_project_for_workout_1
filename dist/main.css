@@ -1,41 +1,3 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-.header._yandex-mark {
-  margin-right: 200px;
-  padding-top: 15px;
-  padding-left: 18px;
-  color: #90919d;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  font-display: swap;
-  font-style: normal;
-  font-size: 12px;
-  font-weight: 500;
-}
-.header._mail-mark {
-  color: #000;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  font-display: swap;
-  font-style: normal;
-  font-size: 13px;
-  font-weight: 400;
-  padding: 4px 12px;
-}
-.header__option {
-  display: flex;
-  justify-content: space-between;
-}
-.header__option._mail-mark {
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  font-display: swap;
-  font-style: normal;
-  font-size: 13px;
-  font-weight: 400;
-}
-.header__options {
-  height: 32px;
-}
 .wrapper {
   font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
   font-display: swap;
@@ -48,6 +10,9 @@
 }
 .wrapper._mail-flag * {
   outline-color: #000;
+}
+.wrapper._css-tricks-flag * {
+  outline-color: #fff;
 }
 @media screen and (max-width: 1300px) {
   .wrapper._mail-flag {
@@ -256,16 +221,23 @@ body {
   color: #000;
 }
 .ya-search {
-  display: flex;
   position: relative;
+  display: flex;
   right: 140px;
-  top: -10px;
+  top: 25px;
   margin-right: 200px;
 }
 .ya-search__log {
   position: relative;
-  bottom: 10px;
+  bottom: 35px;
   right: 0;
+}
+.ya-search__bar-form {
+  display: flex;
+  width: 930px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #fc0;
 }
 .ya-notification {
   position: absolute;
@@ -350,13 +322,14 @@ body {
   right: 10px;
   opacity: 0;
 }
-close-icon {
-  width: 30px;
-  height: 20px;
-  background-size: 30px;
-}
 .actions__icon.close-icon:hover {
   fill: #000;
+}
+.search-icon {
+  fill: #000;
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
 }
 .app-icon {
   display: inline-block;
@@ -436,9 +409,6 @@ close-icon {
 .dots-icon._hidden {
   opacity: 0;
 }
-._hidden {
-  opacity: 0;
-}
 .dots-horizont-icon {
   fill: #b8b9c0;
   cursor: pointer;
@@ -465,45 +435,52 @@ close-icon {
 }
 .ya-bar-form {
   display: flex;
-  margin-top: 25px;
-  width: 990px;
+  border: 2px solid #fc0;
+  border-radius: 10px;
 }
 .ya-bar-form__input {
   display: inline-block;
-  width: 900px;
-  height: 40px;
-  padding-left: 9px;
-  border: 3px solid #fc0;
-  border-right: 5px solid #fc0;
-  border-radius: 10px;
-  outline: none;
-}
-.ya-bar-form__input::-webkit-search-results-decoration,
-.ya-bar-form__input::-webkit-search-cancel-button,
-.ya-bar-form__input::-webkit-search-decoration,
-.ya-bar-form__input::-webkit-search-results-button {
-  opacity: 0;
+  width: 800px;
+  border: 0 solid transparent;
+  outline: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 10px;
+  border-right-width: 40px;
+  border-left-width: 15px;
 }
 .ya-bar-form__input::-ms-clear {
-  opacity: 0;
+  display: none;
+  width: 0;
+  height: 0;
 }
 .ya-bar-form__input::-ms-reveal {
-  opacity: 0;
+  display: none;
+  width: 0;
+  height: 0;
+}
+.ya-bar-form__input::-webkit-search-decoration,
+.ya-bar-form__input::-webkit-search-cancel-button,
+.ya-bar-form__input::-webkit-search-results-button,
+.ya-bar-form__input::-webkit-search-results-decoration {
+  display: none;
 }
 .ya-bar-form__button {
-  width: 83px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
   height: 40px;
   font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
   font-display: swap;
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
-  margin-left: -7px;
-  border: none;
-  border-bottom-right-radius: 10px;
+  border: 0;
   border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #fc0;
-  outline: none;
   cursor: pointer;
 }
 .ya-bar-form__actions {
@@ -512,9 +489,17 @@ close-icon {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  right: 150px;
+  right: 80px;
   padding-top: 8px;
   fill: #e4e4e4;
+}
+._move {
+  transform: translateX(-40px);
+  transition: transform 0.1s;
+}
+._view {
+  transition: fill 0.2s;
+  fill: rgba(0, 0, 0, 0.08) !important;
 }
 .ya-covid-histogram {
   cursor: pointer;
@@ -524,6 +509,7 @@ close-icon {
   box-sizing: border-box;
   padding: 12px 14px;
   background: #fff;
+  z-index: 5;
 }
 .ya-covid-histogram__title._selected {
   font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
@@ -541,9 +527,13 @@ close-icon {
 }
 .ya-covid-histogram__icon {
   position: relative;
-  width: 30px;
-  height: 30px;
-  left: 40px;
+  bottom: 40px;
+  left: 150px;
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  cursor: pointer;
 }
 .ya-information__data {
   margin-left: 15px;
@@ -661,6 +651,32 @@ close-icon {
   transform: translateY(-5px);
   transition: transform ease-out 0.15s;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header._yandex-mark {
+  margin-right: 200px;
+  padding-top: 15px;
+  padding-left: 18px;
+  color: #90919d;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-display: swap;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 500;
+}
+.header__option {
+  display: flex;
+  justify-content: space-between;
+}
+.header__option._mail-mark {
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-display: swap;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 400;
+}
 .ma-information {
   height: 32px;
   width: 1200px;
@@ -693,9 +709,14 @@ close-icon {
 .ma-container__nav {
   width: 300px;
 }
+.ma-option {
+  position: relative;
+  right: 15px;
+  top: 5px;
+}
 .ma-option__item {
   display: inline-flex;
-  height: 28px;
+  height: 20px;
   align-items: center;
   padding: 4px 8px;
   text-align: center;
@@ -839,17 +860,16 @@ close-icon {
 .ma-bar-form {
   display: flex;
   width: 100%;
-  margin-top: 10px;
 }
 .ma-bar-form__input {
   display: inline-block;
   width: calc(100% - 120px);
   height: 40px;
-  padding-left: 9px;
-  border: 3px solid #ff9e00;
-  border-right: 5px solid #ff9e00;
+  border: 0 solid transparent;
   border-radius: 10px;
   outline: none;
+  border-right-width: 150px;
+  border-left-width: 30px;
 }
 .ma-bar-form__input::-webkit-search-results-decoration,
 .ma-bar-form__input::-webkit-search-cancel-button,
@@ -864,14 +884,17 @@ close-icon {
   opacity: 0;
 }
 .ma-bar-form__button {
-  width: 110px;
-  height: 40px;
+  position: relative;
+  bottom: 0;
+  left: 2px;
+  width: 116px;
+  height: 45px;
+  box-sizing: border-box;
   font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
   font-display: swap;
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
-  margin-left: -7px;
   border: none;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
@@ -879,6 +902,16 @@ close-icon {
   color: #fff;
   outline: none;
   cursor: pointer;
+}
+.ma-bar-form__icon {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+}
+.ma-bar-form__link {
+  position: absolute;
+  top: 15px;
+  left: 680px;
 }
 .ma-nav__authentication {
   display: inline-block;
@@ -931,6 +964,15 @@ close-icon {
   color: currentColor;
 }
 .ma-link:not(._not-hover):hover {
+  text-decoration: underline;
+}
+.ma-link__key {
+  color: #919399;
+}
+.ma-link__value {
+  color: #005bd1;
+}
+.ma-link__value:hover {
   text-decoration: underline;
 }
 .ma-link._subject {
@@ -1076,7 +1118,7 @@ close-icon {
 .ma-authentication__option {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  margin: 15px 15px 15px 25px;
   width: 270px;
   height: 20px;
   padding-bottom: 10px;
@@ -1114,7 +1156,6 @@ close-icon {
 }
 .ma-header {
   display: flex;
-  width: 100%;
   justify-content: space-between;
 }
 .ma-header__title {
@@ -1323,4 +1364,153 @@ close-icon {
   font-size: 15px;
   font-weight: 700;
   margin-left: 0;
+}
+.main__search {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 10px 0;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid #ff9e00;
+}
+.wrapper._css-tricks-flag {
+  background-color: #262626;
+  scrollbar-color: #666 #201c29;
+  color: #fff;
+  margin: 0;
+}
+.ct-header {
+  display: flex;
+  position: relative;
+  height: 60px;
+}
+.ct-header__icon-star {
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+.ct-header__icon-logo {
+  position: relative;
+  top: 20px;
+  left: 60px;
+}
+.ct-header__information {
+  position: relative;
+  top: 0;
+  left: 110px;
+}
+.ct-header__option {
+  position: absolute;
+  top: 17px;
+  right: 25px;
+}
+.ct-star-icon {
+  fill: #fff;
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+}
+.ct-logo-icon {
+  fill: #fff;
+  width: 190px;
+  height: 25px;
+  background-size: 190px 25px;
+}
+.ct-search-icon,
+.ct-account-icon {
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+}
+.ct-link._primary {
+  display: inline-block;
+  width: 90px;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-display: swap;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.ct-link._primary:hover {
+  background-color: #000;
+  color: #ff7a18;
+}
+.ct-option {
+  display: flex;
+}
+.ct-content {
+  position: relative;
+}
+.ct-content:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  content: "";
+  background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+}
+.ct-article {
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 0;
+  width: calc(100% - 140px);
+  height: 330px;
+  margin: auto;
+  border-radius: 20px;
+  opacity: 1.8;
+  background-color: #fff;
+}
+.ct-article__image {
+  display: inline-block;
+  width: 120%;
+  height: 100%;
+  background-size: 120% 100%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.ct-container {
+  height: 400px;
+}
+.ct-lining {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.ct-lining__link {
+  text-decoration: none;
+}
+.ct-lining__link._tag {
+  color: #ff7a18;
+  text-transform: uppercase;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-display: swap;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 700;
+}
+.ct-lining__link._primary {
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-display: swap;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+.ct-lining__text {
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-display: swap;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #000;
 }

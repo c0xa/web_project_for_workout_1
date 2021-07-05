@@ -1,0 +1,26 @@
+.ct-lining {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    &__link {
+        text-decoration: none;
+
+        &._tag {
+            color: @ct-alarm-orange;
+            text-transform: uppercase;
+            .font-medium-very-bold();
+        }
+
+        &._primary {
+            .font-very-big-very-bold();
+            color: @default-black;
+        }
+    }
+
+    &__text {
+        .font-big-medium();
+        margin-top: 20px;
+        color: @default-black;
+    }
+}
