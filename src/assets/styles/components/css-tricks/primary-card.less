@@ -1,0 +1,66 @@
+.ct-primary-card {
+
+    &:before {
+        content: "";
+        background: @ct-linear-gradient-colored;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+
+        z-index: 1;
+        border-radius: 12px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: @default-black;
+        z-index: 2;
+        border-radius: 8px;
+    }
+
+    &__label {
+        position: relative;
+        top: 200px;
+        left: 20px;
+
+        display: inline-block;
+        width: 80px;
+        z-index: 3;
+        .font-very-big-very-bold();
+    }
+
+    &__sponsor {
+        position: relative;
+        top: 240px;
+        left: -60px;
+
+        .font-pre-big-regular();
+
+        z-index: 3;
+    }
+
+    &__author {
+        position: relative;
+        top: 250px;
+        left: 23px;
+
+        color: @ct-primary-blue;
+        .font-pre-big-regular();
+
+        display: inline-block;
+        text-decoration: none;
+        z-index: 3;
+        &:hover {
+            opacity: 0.5;
+            transition: opacity .15s linear;
+        }
+    }
+}

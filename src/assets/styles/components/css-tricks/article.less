@@ -1,25 +1,32 @@
 .ct-article {
-    display: flex;
-    position: relative;
-    top: 20px;
-    left: 0;
+    border-radius: 8px;
+    filter: drop-shadow(0 5px 15px @ct-filter-dark);
 
-    width: calc(100% - 140px);
-    height: 330px;
-
-    margin: auto;
-
-    border-radius: 20px;
-    opacity: 1.8;
     background-color: @default-white;
+    overflow: hidden;
+
+    z-index: 1;
 
     &__image {
         display: inline-block;
 
         .create-icon(120%, 100%, 120% 100%);
 
-        border-radius: 20px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
         box-sizing: border-box;
         object-fit: cover;
+        &:before {
+            pointer-events: none;
+            content: "";
+            background: @ct-linear-gradient-colored;
+            position: absolute;
+            mix-blend-mode: screen;
+            opacity: .75;
+            width: 120%;
+            min-height: 500px;
+            height: 100%;
+            z-index: 2;
+        }
     }
 }

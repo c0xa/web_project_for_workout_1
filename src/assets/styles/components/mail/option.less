@@ -1,7 +1,17 @@
 .ma-option {
     position: relative;
-    right: 15px;
-    top: 5px;
+    right: 0;
+    top: 0;
+
+    &._mail-mark {
+        right: 15px;
+        top: 5px;
+    }
+
+    &__label {
+        margin: 5px 0 0 20px;
+    }
+
     &__item {
         display: inline-flex;
         height: 20px;
@@ -35,8 +45,11 @@
     }
 
     &__link {
-        color: @default-black;
+        display: inline-block;
 
+        color: @default-black;
+        margin: 10px 0 0;
+        transform: translateX(14px);
         &:hover {
             text-decoration: none;
         }

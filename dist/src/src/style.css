@@ -120,6 +120,7 @@ body {
 
 .side-footer-wrapper__img {
     display: flex;
+    position: relative;
 
 
     padding-top: 50px;
@@ -133,13 +134,29 @@ body {
 }
 
 .img__link-info {
-    margin-left: 5%;
+    position: relative;
+    top: 0;
+    left: 5%;
 }
 
 .img__link-chat {
-    margin-left: 75%;
+    position: relative;
+    top: 0;
+    left: 75%;
 }
 
 .img__link-message {
-    margin-left: 5%;
+    position: relative;
+    top: 0;
+    left: 85%;
 }
+
+.img__tag {
+    position: absolute;
+    top: 50px;
+    left: 10%;
+
+    color: wheat;
+    font-size: 20px;
+}
+

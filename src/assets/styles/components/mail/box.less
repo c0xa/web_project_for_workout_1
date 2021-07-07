@@ -1,12 +1,19 @@
 .ma-box {
     margin-top: 10px;
-    display: flex;
     text-decoration: none;
+    display: flex;
+    &._option {
+        width: 105px;
+    }
+
+    &__icon {
+        margin-left: 3px;
+    }
 
     &__image {
         height: 48px;
         width: 64px;
-        border: 1px solid black;
+        border: 1px solid @default-black;
     }
 
     &__title {
