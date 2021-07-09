@@ -91,7 +91,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("js", function () {
-	return gulp.src("./src/assets/js/**/*.js").pipe(gulp.dest("./dist"));
+	return gulp.src("./src/assets/js/**/*").pipe(gulp.dest("./dist"));
 });
 
 gulp.task("fonts", function () {

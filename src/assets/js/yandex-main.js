@@ -1,3 +1,67 @@
+
+function createHtml(data) {
+    let block = '<div class="ya-dzen__ya-dzen-item ya-dzen-item">' +
+        '<span class="ya-dzen-item__label">' + data.label + '</span> ' +
+        '<span class="ya-dzen-item__text">' + data.text + '</span> ' +
+        '</div>';
+    return block;
+}
+
+let block = document.querySelector('.ya-dzen');
+
+function createBlock(data) {
+    let newDiv = document.createElement('div');
+    newDiv.innerHTML = createHtml(data);
+    block.appendChild(newDiv);
+}
+
+const urlToFetch = "dzen.json";
+const controller = new AbortController()
+const signal = controller.signal
+
+signal.addEventListener("abort", () => {
+    console.log("aborted!")
+})
+
+function addBlock() {
+    let data;
+    fetch(urlToFetch, {
+        method: 'get',
+        signal: signal,
+    })
+        .then(response => {
+            return response.json();
+        })
+        .then(json => {
+            data = json;
+            data.forEach(part => createBlock(part));
+        })
+        .catch(function(err) {
+            console.error(' Err: ${err}');
+    });
+}
+
+function abortFetching() {
+    console.log('Now aborting');
+    controller.abort()
+}
+
+addBlock();
+
+window.addEventListener('scroll', () => {
+    const {
+        scrollTop,
+        scrollHeight,
+        clientHeight
+    } = document.documentElement;
+    if (scrollTop + clientHeight >= scrollHeight) {
+        addBlock();
+    }
+}, {
+    passive: true
+});
+
+//notification
 const notification = document.querySelector(".ya-notification__covid-histogram");
 const notificationCovid = document.querySelector(".ya-covid-histogram");
 const close = document.querySelector(".ya-covid-histogram__icon.close-icon");
@@ -15,7 +79,7 @@ function mouseout() {
 notification.addEventListener("mouseover", mouseover)
 notification.addEventListener("mouseout", mouseout)
 
-notificationCovid.addEventListener("click", function() {
+notificationCovid.addEventListener("click", function () {
     notification.removeEventListener("mouseover", mouseover);
     notification.removeEventListener("mouseout", mouseout);
 
@@ -23,7 +87,7 @@ notificationCovid.addEventListener("click", function() {
     close.classList.add("_view");
 })
 
-close.addEventListener("click", function() {
+close.addEventListener("click", function () {
     notificationCovid.classList.remove("_move");
     close.classList.remove("_view");
 
