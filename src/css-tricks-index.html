@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="ct-html" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CCS-Tricks</title>
+    <title>CSS-Tricks</title>
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
@@ -42,10 +42,11 @@
     <main class="ct-content">
         <div class="ct-content__ct-container ct-container">
             <article class="ct-container__ct-article ct-article">
-                <img class="ct-article__image" src="https://css-tricks.com/wp-content/uploads/2021/07/shutterstock_194720687-scaled.jpg" alt="">
+                <img class="ct-article__image"
+                     src="https://css-tricks.com/wp-content/uploads/2021/07/shutterstock_194720687-scaled.jpg" alt="">
                 <div class="ct-article__lining ct-lining">
-                    <a class="ct-lining__link _tag" href="#">BIRTHDAY</a>
-                    <a class="ct-lining__link _primary" href="#">The Fourteenth Fourth</a>
+                    <a class="ct-lining__link ct-link _tag" href="#">BIRTHDAY</a>
+                    <a class="ct-lining__link ct-link _mandatory" href="#">The Fourteenth Fourth</a>
                     <p class="ct-lining__text">
                         It’s CSS-Tricks birthday! Somehow that keeps coming around every year.
                         It’s that time where I reflect upon that past year. It’s like the annual vibe check.
@@ -53,11 +54,13 @@
 
                     <div class="ct-lining__ct-author-row ct-author-row">
                         <a class="ct-author-row__link ct-author-image" href="#">
-                            <img class="ct-author-image__avatar" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg" alt="">
+                            <img class="ct-author-image__avatar"
+                                 src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                 alt="">
                         </a>
                         <div class="ct-author-row__ct-author-info ct-author-info">
                             <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
-                            <span  class="ct-author-info__time">on Jul 4, 2021</span>
+                            <span class="ct-author-info__time">on Jul 4, 2021</span>
                         </div>
                     </div>
                 </div>
@@ -69,17 +72,969 @@
                     <a class="ct-primary-card__author link" href="#">Frontend Masters</a>
                 </div>
 
-                <div class="ct-card__ct-usually-card">
-                    <div class="ct-usually-card>
-
-                    </div>
-                    <div class="ct-usually-card>
-
-                    </div>
+                <div class="ct-card__ct-mini-card ct-mini-card">
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </article>
+            <article class="ct-container__ct-box-grid ct-box-grid">
+                <div class="ct-box-grid__ct-box-content ct-box-content">
+                    <article class="ct-box-content__ct-box-item ct-box-item">
+                        <a class="ct-box-item__ct-link ct-link" href="#">
+                            <img class="ct-link__image box-icon" src="https://css-tricks.com/wp-content/uploads/2019/05/light-dark-mode-1.png" alt="">
+                        </a>
+                        <div class="ct-box-item__ct-text ct-text">
+                            <header class="ct-text__ct-header">
+                                <a class="ct-header__ct-link ct-link _tag" href="#">DARK MODE</a>
+                                <a class="ct-header__ct-link ct-link _tag" href="#">FAVICON</a>
+                            </header>
+                            <h2 class="ct-text__ct-link">
+                                <a class="ct-link _mandatory" href="#">SVG Favicon in Action</a>
+                            </h2>
+                            <div class="ct-text__contents">
+                                <p class="contents _paragraph">Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks,
+                                    you probably have. But does your website actually use one?
+                                </p>
+                                <p class="contents _paragraph">
+                                    The task is more non-trivial than you might think. As we will see in this …
+                                </p>
+                            </div>
 
+                            <div class="ct-text__ct-author-row ct-author-row">
+                                <a class="ct-author-row__link ct-author-image" href="#">
+                                    <img class="ct-author-image__avatar"
+                                         src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                         alt="">
+                                </a>
+                                <div class="ct-author-row__ct-author-info ct-author-info">
+                                    <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
+                                    <span class="ct-author-info__time">on Jul 4, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-content-grid__ct-box-item ct-box-item">
+                        <a class="ct-box-item__ct-link ct-link" href="#">
+                            <img class="ct-link__image box-icon" src="https://css-tricks.com/wp-content/uploads/2019/05/light-dark-mode-1.png" alt="">
+                        </a>
+                        <div class="ct-box-item__ct-text ct-text">
+                            <header class="ct-text__ct-header">
+                                <a class="ct-header__ct-link ct-link _tag" href="#">DARK MODE</a>
+                                <a class="ct-header__ct-link ct-link _tag" href="#">FAVICON</a>
+                            </header>
+                            <h2 class="ct-text__ct-link">
+                                <a class="ct-link _mandatory" href="#">SVG Favicon in Action</a>
+                            </h2>
+                            <div class="ct-text__contents">
+                                <p class="contents _paragraph">Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks,
+                                    you probably have. But does your website actually use one?
+                                </p>
+                                <p class="contents _paragraph">
+                                    The task is more non-trivial than you might think. As we will see in this …
+                                </p>
+                            </div>
+
+                            <div class="ct-text__ct-author-row ct-author-row">
+                                <a class="ct-author-row__link ct-author-image" href="#">
+                                    <img class="ct-author-image__avatar"
+                                         src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                         alt="">
+                                </a>
+                                <div class="ct-author-row__ct-author-info ct-author-info">
+                                    <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
+                                    <span class="ct-author-info__time">on Jul 4, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-content-grid__ct-box-item ct-box-item">
+                        <a class="ct-box-item__ct-link ct-link" href="#">
+                            <img class="ct-link__image box-icon" src="https://css-tricks.com/wp-content/uploads/2019/05/light-dark-mode-1.png" alt="">
+                        </a>
+                        <div class="ct-box-item__ct-text ct-text">
+                            <header class="ct-text__ct-header">
+                                <a class="ct-header__ct-link ct-link _tag" href="#">DARK MODE</a>
+                                <a class="ct-header__ct-link ct-link _tag" href="#">FAVICON</a>
+                            </header>
+                            <h2 class="ct-text__ct-link">
+                                <a class="ct-link _mandatory" href="#">SVG Favicon in Action</a>
+                            </h2>
+                            <div class="ct-text__contents">
+                                <p class="contents _paragraph">Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks,
+                                    you probably have. But does your website actually use one?
+                                </p>
+                                <p class="contents _paragraph">
+                                    The task is more non-trivial than you might think. As we will see in this …
+                                </p>
+                            </div>
+
+                            <div class="ct-text__ct-author-row ct-author-row">
+                                <a class="ct-author-row__link ct-author-image" href="#">
+                                    <img class="ct-author-image__avatar"
+                                         src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                         alt="">
+                                </a>
+                                <div class="ct-author-row__ct-author-info ct-author-info">
+                                    <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
+                                    <span class="ct-author-info__time">on Jul 4, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-box-content__ct-box-item ct-box-item">
+                        <a class="ct-box-item__ct-link ct-link" href="#">
+                            <img class="ct-link__image box-icon" src="https://css-tricks.com/wp-content/uploads/2019/05/light-dark-mode-1.png" alt="">
+                        </a>
+                        <div class="ct-box-item__ct-text ct-text">
+                            <header class="ct-text__ct-header">
+                                <a class="ct-header__ct-link ct-link _tag" href="#">DARK MODE</a>
+                                <a class="ct-header__ct-link ct-link _tag" href="#">FAVICON</a>
+                            </header>
+                            <h2 class="ct-text__ct-link">
+                                <a class="ct-link _mandatory" href="#">SVG Favicon in Action</a>
+                            </h2>
+                            <div class="ct-text__contents">
+                                <p class="contents _paragraph">Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks,
+                                    you probably have. But does your website actually use one?
+                                </p>
+                                <p class="contents _paragraph">
+                                    The task is more non-trivial than you might think. As we will see in this …
+                                </p>
+                            </div>
+
+                            <div class="ct-text__ct-author-row ct-author-row">
+                                <a class="ct-author-row__link ct-author-image" href="#">
+                                    <img class="ct-author-image__avatar"
+                                         src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                         alt="">
+                                </a>
+                                <div class="ct-author-row__ct-author-info ct-author-info">
+                                    <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
+                                    <span class="ct-author-info__time">on Jul 4, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-content-grid__ct-box-item ct-box-item">
+                        <a class="ct-box-item__ct-link ct-link" href="#">
+                            <img class="ct-link__image box-icon" src="https://css-tricks.com/wp-content/uploads/2019/05/light-dark-mode-1.png" alt="">
+                        </a>
+                        <div class="ct-box-item__ct-text ct-text">
+                            <header class="ct-text__ct-header">
+                                <a class="ct-header__ct-link ct-link _tag" href="#">DARK MODE</a>
+                                <a class="ct-header__ct-link ct-link _tag" href="#">FAVICON</a>
+                            </header>
+                            <h2 class="ct-text__ct-link">
+                                <a class="ct-link _mandatory" href="#">SVG Favicon in Action</a>
+                            </h2>
+                            <div class="ct-text__contents">
+                                <p class="contents _paragraph">Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks,
+                                    you probably have. But does your website actually use one?
+                                </p>
+                                <p class="contents _paragraph">
+                                    The task is more non-trivial than you might think. As we will see in this …
+                                </p>
+                            </div>
+
+                            <div class="ct-text__ct-author-row ct-author-row">
+                                <a class="ct-author-row__link ct-author-image" href="#">
+                                    <img class="ct-author-image__avatar"
+                                         src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                         alt="">
+                                </a>
+                                <div class="ct-author-row__ct-author-info ct-author-info">
+                                    <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
+                                    <span class="ct-author-info__time">on Jul 4, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-content-grid__ct-box-item ct-box-item">
+                        <a class="ct-box-item__ct-link ct-link" href="#">
+                            <img class="ct-link__image box-icon" src="https://css-tricks.com/wp-content/uploads/2019/05/light-dark-mode-1.png" alt="">
+                        </a>
+                        <div class="ct-box-item__ct-text ct-text">
+                            <header class="ct-text__ct-header">
+                                <a class="ct-header__ct-link ct-link _tag" href="#">DARK MODE</a>
+                                <a class="ct-header__ct-link ct-link _tag" href="#">FAVICON</a>
+                            </header>
+                            <h2 class="ct-text__ct-link">
+                                <a class="ct-link _mandatory" href="#">SVG Favicon in Action</a>
+                            </h2>
+                            <div class="ct-text__contents">
+                                <p class="contents _paragraph">Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks,
+                                    you probably have. But does your website actually use one?
+                                </p>
+                                <p class="contents _paragraph">
+                                    The task is more non-trivial than you might think. As we will see in this …
+                                </p>
+                            </div>
+
+                            <div class="ct-text__ct-author-row ct-author-row">
+                                <a class="ct-author-row__link ct-author-image" href="#">
+                                    <img class="ct-author-image__avatar"
+                                         src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                         alt="">
+                                </a>
+                                <div class="ct-author-row__ct-author-info ct-author-info">
+                                    <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
+                                    <span class="ct-author-info__time">on Jul 4, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-box-content__ct-box-item ct-box-item">
+                        <a class="ct-box-item__ct-link ct-link" href="#">
+                            <img class="ct-link__image box-icon" src="https://css-tricks.com/wp-content/uploads/2019/05/light-dark-mode-1.png" alt="">
+                        </a>
+                        <div class="ct-box-item__ct-text ct-text">
+                            <header class="ct-text__ct-header">
+                                <a class="ct-header__ct-link ct-link _tag" href="#">DARK MODE</a>
+                                <a class="ct-header__ct-link ct-link _tag" href="#">FAVICON</a>
+                            </header>
+                            <h2 class="ct-text__ct-link">
+                                <a class="ct-link _mandatory" href="#">SVG Favicon in Action</a>
+                            </h2>
+                            <div class="ct-text__contents">
+                                <p class="contents _paragraph">Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks,
+                                    you probably have. But does your website actually use one?
+                                </p>
+                                <p class="contents _paragraph">
+                                    The task is more non-trivial than you might think. As we will see in this …
+                                </p>
+                            </div>
+
+                            <div class="ct-text__ct-author-row ct-author-row">
+                                <a class="ct-author-row__link ct-author-image" href="#">
+                                    <img class="ct-author-image__avatar"
+                                         src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                         alt="">
+                                </a>
+                                <div class="ct-author-row__ct-author-info ct-author-info">
+                                    <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
+                                    <span class="ct-author-info__time">on Jul 4, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-content-grid__ct-box-item ct-box-item">
+                        <a class="ct-box-item__ct-link ct-link" href="#">
+                            <img class="ct-link__image box-icon" src="https://css-tricks.com/wp-content/uploads/2019/05/light-dark-mode-1.png" alt="">
+                        </a>
+                        <div class="ct-box-item__ct-text ct-text">
+                            <header class="ct-text__ct-header">
+                                <a class="ct-header__ct-link ct-link _tag" href="#">DARK MODE</a>
+                                <a class="ct-header__ct-link ct-link _tag" href="#">FAVICON</a>
+                            </header>
+                            <h2 class="ct-text__ct-link">
+                                <a class="ct-link _mandatory" href="#">SVG Favicon in Action</a>
+                            </h2>
+                            <div class="ct-text__contents">
+                                <p class="contents _paragraph">Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks,
+                                    you probably have. But does your website actually use one?
+                                </p>
+                                <p class="contents _paragraph">
+                                    The task is more non-trivial than you might think. As we will see in this …
+                                </p>
+                            </div>
+
+                            <div class="ct-text__ct-author-row ct-author-row">
+                                <a class="ct-author-row__link ct-author-image" href="#">
+                                    <img class="ct-author-image__avatar"
+                                         src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                         alt="">
+                                </a>
+                                <div class="ct-author-row__ct-author-info ct-author-info">
+                                    <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
+                                    <span class="ct-author-info__time">on Jul 4, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-content-grid__ct-box-item ct-box-item">
+                        <a class="ct-box-item__ct-link ct-link" href="#">
+                            <img class="ct-link__image box-icon" src="https://css-tricks.com/wp-content/uploads/2019/05/light-dark-mode-1.png" alt="">
+                        </a>
+                        <div class="ct-box-item__ct-text ct-text">
+                            <header class="ct-text__ct-header">
+                                <a class="ct-header__ct-link ct-link _tag" href="#">DARK MODE</a>
+                                <a class="ct-header__ct-link ct-link _tag" href="#">FAVICON</a>
+                            </header>
+                            <h2 class="ct-text__ct-link">
+                                <a class="ct-link _mandatory" href="#">SVG Favicon in Action</a>
+                            </h2>
+                            <div class="ct-text__contents">
+                                <p class="contents _paragraph">Ever heard of favicons made with SVG? If you are a regular reader of CSS-Tricks,
+                                    you probably have. But does your website actually use one?
+                                </p>
+                                <p class="contents _paragraph">
+                                    The task is more non-trivial than you might think. As we will see in this …
+                                </p>
+                            </div>
+
+                            <div class="ct-text__ct-author-row ct-author-row">
+                                <a class="ct-author-row__link ct-author-image" href="#">
+                                    <img class="ct-author-image__avatar"
+                                         src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                         alt="">
+                                </a>
+                                <div class="ct-author-row__ct-author-info ct-author-info">
+                                    <a class="ct-author-info__name ct-link" href="#">Chris Coyier</a>
+                                    <span class="ct-author-info__time">on Jul 4, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="ct-box-grid__ct-box-nav ct-box-nav">
+                    <article class="ct-box-nav__ct-box-nav-item ct-nav-item">
+                        <a class="ct-nav-item__ct-link ct-link" href="">
+                            <img class="ct-link__image box-icon _module" src="https://cdn4.buysellads.net/uu/7/95310/1625099297-cssv1.png" alt="">
+                        </a>
+                        <a class="ct-nav-item__ct-link _tag" href="#">Sponsored</a>
+                        <a class="ct-nav-item__ct-link" href="#">Clubhouse is project management that software engineers actually want to use. What a concept.</a>
+                    </article>
+                    <article class="ct-box-nav__ct-box-nav-item ct-nav-item">
+                        <a class="ct-nav-item__ct-link ct-link" href="">
+                            <img class="ct-link__image box-icon _module" src="https://cdn4.buysellads.net/uu/7/95310/1625099297-cssv1.png" alt="">
+                        </a>
+                        <a class="ct-nav-item__ct-link _tag" href="#">Sponsored</a>
+                        <a class="ct-nav-item__ct-link" href="#">Clubhouse is project management that software engineers actually want to use. What a concept.</a>
+                    </article>
+                    <article class="ct-box-nav__ct-box-nav-item ct-nav-item">
+                        <a class="ct-nav-item__ct-link ct-link" href="">
+                            <img class="ct-link__image box-icon _module" src="https://cdn4.buysellads.net/uu/7/95310/1625099297-cssv1.png" alt="">
+                        </a>
+                        <a class="ct-nav-item__ct-link _tag" href="#">Sponsored</a>
+                        <a class="ct-nav-item__ct-link" href="#">Clubhouse is project management that software engineers actually want to use. What a concept.</a>
+                    </article>
+                </div>
+                <a class="ct-box-grid__ct-btn-link" href="#">Keep browsing in the archives</a>
+            </article>
+            <article class="ct-container__ct-card ct-card">
+                <div class="ct-card__ct-primary-card ct-primary-card">
+                    <span class="ct-primary-card__label">The Monthly Mixup</span>
+                    <span class="ct-primary-card__sponsor">Sponsored by</span>
+                    <a class="ct-primary-card__author link" href="#">Frontend Masters</a>
+                </div>
+
+                <div class="ct-card__ct-mini-card ct-mini-card">
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ct-mini-card__ct-card-module ct-card-module">
+                        <time class="ct-card-module__ct-time ct-time">
+                            <span class="ct-time _primary">Article </span>on Jun 23, 2021
+                        </time>
+                        <a class="ct-card-module__ct-link ct-link _necessary" href="#">
+                            Using Performant Next-Gen Images in CSS with image-set
+                        </a>
+                        <div class="ct-card-module__ct-card-tag ct-card-tag">
+                            <a class="ct-card-tag__link ct-link _tag" href="#">AVIF</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">IMAGE-SET</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">PICTURE</a>
+                            <a class="ct-card-tag__link ct-link _tag" href="#">SRCSET</a>
+                        </div>
+                        <div class="ct-card-module__ct-author-row ct-author-row">
+                            <a class="ct-author-row__link ct-author-image" href="#">
+                                <img class="ct-author-image__avatar"
+                                     src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                                     alt="">
+                            </a>
+                            <div class="ct-card-module__ct-author-info ct-author-info">
+                                <a class="ct-author-info__name ct-link  _author" href="#">Chris Coyier</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </div>
     </main>
+    <footer class="ct-content__ct-footer ct-footer">
+        <svg class="ct-footer__icon-star ct-star-icon">
+            <use href="#icon-ct-logo-star"></use>
+        </svg>
+        <div class="ct-footer__ct-menu ct-menu">
+            <article class="ct-menu__ct-menu-header">
+                <h1 class="ct-menu-header">
+                    CSS-Tricks is created by
+                    <a class="ct-menu-header__ct-link ct-link" href="">Chris</a>
+                    and a
+                    <a class="ct-menu-header__ct-link ct-link" href="">team</a>
+                    of swell people.
+                </h1>
+            </article>
+            <article class="ct-menu__ct-menu-subscribe ct-menu-subscribe">
+                <h1 class="ct-menu-subscribe__label">KEEP UP TO DATE ON WEB DEV</h1>
+                <p class="ct-menu-subscribe__text">with our hand-crafted weekly newsletter</p>
+                <div class="ct-menu-subscribe__ct-footer-form ct-footer-form">
+                    <input class="ct-footer-form__email" type="email" placeholder="smart@cookie.com">
+                    <input class="ct-footer-form__subscribe" type="sumbit" value="Subscribe">
+                </div>
+            </article>
+        </div>
+        <div class="ct-footer__ct-menu-mandatory ct-menu-mandatory">
+            <div class="ct-menu-mandatory__ct-menu-column">
+                <div class="ct-menu-column">
+                    <h5 class="ct-menu-column__ct-title">TECH</h5>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">WordPress
+                        <span class="ct-link _not-hover">(CMS)</span>
+                    </a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Jetpack
+                        <span class="ct-link _not-hover">(Search, Backup)</span>
+                    </a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">WooCommerce
+                        <span class="ct-link _not-hover">(eCommerce)</span>
+                    </a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Local
+                        <span class="ct-link _not-hover">(Development)</span>
+                    </a>
+                </div>
+                <div class="ct-menu-column">
+                    <h5 class="ct-menu-column__ct-title">Hosting</h5>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Flywheel
+                    </a>
+                </div>
+            </div>
+            <div class="ct-menu-mandatory__ct-menu-column">
+                <div class="ct-menu-column">
+                    <h5 class="ct-menu-column__ct-title">FAMILY</h5>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">CodePen</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">ShopTalk Show</a>
+                </div>
+                <div class="ct-menu-column">
+                    <h5 class="ct-menu-column__ct-title">MINISITES</h5>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">The Power of Serverless</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Upcoming Conferences</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Coding Fonts</a>
+                </div>
+            </div>
+            <div class="ct-menu-mandatory__ct-menu-column">
+                <div class="ct-menu-column">
+                    <h5 class="ct-menu-column__ct-title">Contact</h5>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Email</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Sponsorship Info</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Guest Writing</a>
+                </div>
+                <div class="ct-menu-column">
+                    <h5 class="ct-menu-column__ct-title">BUY</h5>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Posters & Swag</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Membership</a>
+                </div>
+            </div>
+            <div class="ct-menu-mandatory__ct-menu-column">
+                <div class="ct-menu-column">
+                    <h5 class="ct-menu-column__ct-title">FOLLOW</h5>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Twitter</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">Instagram</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">YouTube</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">CodePen</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">GitHub</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">iTunes</a>
+                    <a class="ct-menu-column__ct-link ct-link _article" href="">RSS</a>
+                </div>
+        </div>
+
+    </footer>
 </div>
 <div class="svg-store _hidden">
     <!-- inject:svg -->

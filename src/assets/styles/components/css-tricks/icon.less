@@ -10,4 +10,31 @@
 
 .ct-search-icon, .ct-account-icon {
     .create-icon(50px, 50px, 50px);
+    filter: drop-shadow(0 2px 5px @ct-filter-dark);
+    webkit-filter: drop-shadow(0 2px 5px @ct-filter-dark);
+    z-index: 5;
+}
+
+.box-icon {
+    display: block;
+
+    height: 250px;
+    width: 100%;
+
+    -o-object-fit: cover;
+    object-fit: cover;
+
+    &._module {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        box-shadow: 0 0 1.5rem @ct-shadow-dark;
+        transition: .15s;
+
+        &:hover {
+            opacity: 0.7;
+            transform: translateY(-1.3rem) translateX(-0.3rem) rotate(-3deg);
+            transition: transform .2s linear;
+        }
+    }
 }

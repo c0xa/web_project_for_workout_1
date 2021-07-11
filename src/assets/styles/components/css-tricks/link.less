@@ -15,4 +15,72 @@
             color: @ct-alarm-orange;
         }
     }
+
+    &._necessary {
+        display: inline-block;
+
+        .font-normal-big-max-bold();
+
+        text-decoration: none;
+        color: @default-white;
+
+        margin: 10px 0;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &._author {
+        color: @default-white;
+        .font-medium-big-max-bold();
+    }
+
+    &._tag {
+        text-decoration: none;
+        color: @ct-alarm-orange;
+        text-transform: uppercase;
+        .font-small-very-bold();
+
+        margin-right: 15px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &._mandatory {
+        text-decoration: none;
+        .font-very-big-very-bold();
+        color: @default-black;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &._article {
+        position: relative;
+
+        display: inline-block;
+
+        .font-big-medium();
+
+        color: @ct-white;
+        text-decoration: none;
+
+        box-sizing: border-box;
+
+        margin-right: .2rem;
+
+        &:hover {
+            color: @default-white;
+
+            text-decoration: underline;
+        }
+    }
+
+    &._not-hover {
+        opacity: .3;
+    }
 }

@@ -7,16 +7,39 @@
         left: 0;
 
         width: calc(100% - 140px);
-        height: 300px;
+        height: 350px;
 
         margin: auto;
     }
 
     &__ct-card {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
         width: calc(100% - 140px);
-        height: 420px;
 
-        margin: 50px auto;
+        margin: auto;
 
+        &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 3rem;
+            bottom: 3.6rem;
+            width: 5px;
+            border-radius: 5px;
+            background: @ct-linear-gradient-colored;
+            box-shadow: -10px 0 20px 3px @default-black;
+        }
+    }
+
+    &__ct-box-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 300px;
+
+        width: calc(100% - 140px);
+
+        margin: 30px auto;
     }
 }

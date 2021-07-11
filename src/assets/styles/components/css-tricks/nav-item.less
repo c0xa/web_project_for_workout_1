@@ -1,0 +1,33 @@
+.ct-nav-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 260px;
+
+    margin: 0 0 40px 30px;
+    position: relative;
+    padding: .5rem;
+    border-radius: 8px;
+    background: @default-white;
+
+    &__ct-link {
+        display: block;
+
+        text-decoration: none;
+        color: @ct-background-dark;
+
+        .font-small-medium();
+
+        margin: 5px;
+
+        &._tag {
+            color: @ct-tag-blue;
+            letter-spacing: .05rem;
+        }
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+    }
+}

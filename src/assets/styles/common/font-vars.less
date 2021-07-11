@@ -14,6 +14,7 @@
 @font-size-normal: 13px;
 @font-size-pre-big: 15px;
 @font-size-big: 16px;
+@font-size-normal-big: 20px;
 @font-size-very-big: 26px;
 
 @font-weight-thin: 100;
@@ -22,6 +23,7 @@
 @font-weight-midly-bold: 550;
 @font-weight-bold: 600;
 @font-weight-very-bold: 700;
+@font-weight-max-bold: 800;
 
 .font-main() {
     font-family: @font-family-custom;
@@ -63,6 +65,10 @@
     .font-type(@font-size-very-big, @font-weight-very-bold);
 }
 
+.font-big-very-bold() {
+    .font-type(@font-size-big, @font-weight-very-bold);
+}
+
 .font-medium-medium() {
     .font-type(@font-size-medium, @font-weight-medium);
 }
@@ -89,4 +95,16 @@
 
 .font-pre-big-regular() {
     .font-type(@font-size-pre-big, @font-weight-regular);
+}
+
+.font-normal-max-bold() {
+    .font-type(@font-size-pre-big, @font-weight-max-bold);
+}
+
+.font-normal-big-max-bold() {
+    .font-type(@font-size-normal-big, @font-weight-max-bold);
+}
+
+.font-medium-big-max-bold() {
+    .font-type(@font-size-medium, @font-weight-max-bold);
 }

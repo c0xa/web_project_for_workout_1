@@ -1,0 +1,48 @@
+.ct-footer {
+    height: 450px;
+    position: relative;
+
+    &__icon-star {
+        position: absolute;
+
+        top: 130px;
+        left: 70px;
+
+        fill: @ct-alarm-orange;
+
+        .create-icon(120px, 120px, 120px);
+
+    }
+
+    &__ct-menu {
+        position: relative;
+
+        top: 220px;
+        left: 0;
+
+        z-index: 1;
+
+        background: @ct-black;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    &__ct-menu-mandatory {
+        position: relative;
+
+        top: -60px;
+        left: 0;
+
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: calc(100% - 300px);
+
+        margin-left: 70px;
+
+        z-index: 1;
+    }
+}
