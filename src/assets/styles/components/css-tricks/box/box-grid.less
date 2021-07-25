@@ -1,0 +1,32 @@
+.ct-box-grid {
+    &__ct-btn-link {
+        display: block;
+
+        width: calc(100% - 40px);
+        text-align: center;
+        text-decoration: none;
+
+        background-color: @ct-default-dark-grey;
+        color: @default-white;
+        border: 0;
+
+        border-bottom: 1px solid @ct-border-black;
+        border-right: 1px solid @ct-border-black;
+        box-shadow: inset 1px 1px 0 @ct-default-grey, 0 2px 3px @ct-shadow-very-dark;
+        border-radius: 4px;
+
+        .font-pre-big-very-bold();
+        white-space: nowrap;
+
+        padding: 1rem 1.5rem;
+        margin: 10px 0;
+
+        line-height: 1.4;
+        transition: .07s;
+
+        &:hover {
+            opacity: 0.8;
+            transition: .07s;
+        }
+    }
+}

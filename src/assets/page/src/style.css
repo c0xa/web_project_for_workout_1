@@ -49,19 +49,6 @@ body {
     background: transparent;
 }
 
-.img-site {
-    display: block;
-    width: 700px;
-    height: 450px;
-    background-size: 20%;
-    opacity: 0.9;
-    margin: auto;
-}
-
-.img-site:hover {
-    opacity: 1;
-}
-
 .state-mail {
     grid-area: 5 / 1 / 6 / 2;
     background-color: rgb(255, 211, 166);
@@ -78,11 +65,6 @@ body {
 
 .link__img-css-tricks {
     padding-top: 10%;
-    opacity: 0.1;
-}
-
-.link__img-css-tricks:hover {
-    opacity: 0.1;
 }
 
 .side-footer-wrapper {
@@ -160,3 +142,15 @@ body {
     font-size: 20px;
 }
 
+.img-site {
+    display: block;
+    width: 700px;
+    height: 450px;
+    background-size: 20%;
+    margin: auto;
+    transition: transform 20s;
+}
+
+.img-site:hover {
+    transform: scale(1.5);
+}

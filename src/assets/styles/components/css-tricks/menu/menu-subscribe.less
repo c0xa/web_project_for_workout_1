@@ -1,0 +1,36 @@
+.ct-menu-subscribe {
+
+    position: relative;
+
+    top: 0;
+    left: 0;
+
+    //z-index: @ct-z-hidden;
+    &__label {
+        color: @ct-alarm-orange;
+
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+
+    }
+
+    &__text {
+        .font-normal-regular();
+    }
+
+    &__decoration {
+        position: absolute;
+
+        top: 15px;
+        left: -30px;
+
+        width: 60px;
+        height: 40px;
+
+        transform: rotate(-60deg);
+
+        background-color: @ct-default-grey;
+
+        z-index: @ct-z-hidden;
+    }
+}

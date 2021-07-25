@@ -1,17 +1,24 @@
 
 function createHtml(data) {
-    let block = '<div class="ya-dzen__ya-dzen-item ya-dzen-item">' +
-        '<span class="ya-dzen-item__label">' + data.label + '</span> ' +
-        '<span class="ya-dzen-item__text">' + data.text + '</span> ' +
-        '</div>';
-    return block;
+    let element = document.createElement("div");
+    element.className = "ya-dzen__ya-dzen-item ya-dzen-item";
+
+    let elementLabel = document.createElement("span");
+    elementLabel.className = "ya-dzen-item__label";
+    elementLabel.innerText = data.label;
+
+    let elementText = document.createElement("span");
+    elementText.className = "ya-dzen-item__text";
+    elementText.innerText = data.text;
+
+    element.append(elementLabel, elementText)
+    return element
 }
 
 let block = document.querySelector('.ya-dzen');
 
 function createBlock(data) {
-    let newDiv = document.createElement('div');
-    newDiv.innerHTML = createHtml(data);
+    let newDiv = createHtml(data);
     block.appendChild(newDiv);
 }
 
@@ -27,7 +34,7 @@ function addBlock() {
     let data;
     fetch(urlToFetch, {
         method: 'get',
-        signal: signal,
+        signal,
     })
         .then(response => {
             return response.json();
