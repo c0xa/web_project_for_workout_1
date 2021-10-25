@@ -7,8 +7,9 @@ const array = ["Дальше всех заходит тот, кто не зна�
                 "Чтобы решить проблему нужно изменить угол обзора" ]
 
 menu.onclick = function(event) {
-    let index = Math.floor(Math.random() * array.length);
+    let index = Math.floor(Math.random() * 10);
     let sentince = array[index];
+    console.log(sentince);
     element.textContent = sentince;
     return false;
 };
