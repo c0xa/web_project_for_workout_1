@@ -8,12 +8,6 @@ body {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1300px) {
-    .wrapper {
-        width: 1400px;
-    }
-}
-
 .content {
     position: static;
     display: grid;
@@ -61,7 +55,7 @@ body {
     background-color: rgb(236, 236, 236);
     justify-self: start;
     align-self: start;
-}   
+}
 
 .state-office {
     grid-area: 7 / 1 / 8 / 2;
@@ -143,8 +137,7 @@ body {
 .img__tag {
     position: absolute;
     top: 50px;
-    left: 10%;
-
+    left: calc(10% + 70px);
     color: wheat;
     font-size: 20px;
 }
@@ -160,4 +153,43 @@ body {
 
 .img-site:hover {
     transform: scale(1.5);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1249px) {
+    .state {
+        width: 100%;
+        left: unset;
+    }
+    .navigation {
+        width: 100%;
+        height: 100px;
+        background: rgb(151, 155, 189);
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .navigation__link {
+        flex-direction: row;
+        justify-content: space-evenly;
+        top: 30px;
+    }
+    .img__link-info, .img__link-chat, .img__link-message {
+        position: unset;
+    }
+    .img__tag {
+        color: rgb(53, 55, 79);
+        top: -50px;
+        left: unset;
+    }
+    .side-footer-wrapper__img {
+        gap: 40px;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    body, .navigation__link {
+        width: 980px;
+    }
 }
