@@ -64,6 +64,13 @@ body {
     align-self: start;
 }
 
+.state-graph {
+    grid-area: 8 / 1 / 9 / 2;
+    background-color: rgb(243, 208, 255);
+    justify-self: start;
+    align-self: start;
+}
+
 .link__img-css-tricks, .link__img-office {
     padding-top: 10%;
 }
